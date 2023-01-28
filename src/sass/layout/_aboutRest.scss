@@ -1,0 +1,122 @@
+.aboutRest {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 50px;
+  }
+}
+
+.aboutRest-tables-img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.aboutRest-interior-img {
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  @media screen and (max-width: 1023px) {
+    align-self: end;
+  }
+  @media screen and (min-width: 1024px) {
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    margin-top: -152px;
+    margin-left: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -153px;
+    margin-left: 37px;
+  }
+}
+
+.aboutRest-subtitle {
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--comment-text-color);
+  margin-bottom: 12px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 4px;
+    font-size: 32px;
+  }
+}
+
+.aboutRest-title {
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+  margin-bottom: 12px;
+  color: var(--subtitle-text-color);
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+    font-size: 64px;
+  }
+}
+
+.aboutRest-descr {
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.aboutRest-preferences {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  align-self: center;
+  margin-left: 20px;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    margin-left: 48px;
+    max-width: 312px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 32px;
+  }
+}
+
+.aboutRest-text {
+  max-width: 258px;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 439px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 518px;
+  }
+}
+
+.aboutRest-intro {
+  display: flex;
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+
+.aboutRest-conclusion {
+  display: flex;
+  @media screen and (min-width: 1024px) {
+    align-items: center;
+    margin-top: -18px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -75px;
+  }
+}
