@@ -1,0 +1,31 @@
+.roomluxe {
+    //mobile screen
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: #FFFDEE;
+
+    //tablet
+    @media screen and (min-width: 1024px) {
+        padding-top: 62px;
+        padding-bottom: 40px;
+    }
+
+    //desktop
+    @media screen and (min-width: 1280px) {
+        padding-top: 72px;
+        padding-bottom: 40px;
+    }
+}
+
+ .slogan {
+
+    //mobile screen
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1024px) {
+        
+        margin-bottom: 4px;
+        
+    }
+}
+
