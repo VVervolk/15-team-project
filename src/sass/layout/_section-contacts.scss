@@ -122,7 +122,23 @@
   width: 24px;
   height: 24px;
   margin-right: 9px;
+  flex-shrink: 0;
 }
+
+@media screen and (max-width: 1023px) {
+  .contact__link--restaurant {
+      margin-left: 31px;
+    }
+  
+    .contact__link--hotel {
+      margin-left: 57px;
+    }
+  
+    .contact__link--adress {
+      margin-left: 121px;
+    }
+}
+
 
 .map{
   width: 100%;
