@@ -1,4 +1,4 @@
-.aboutRest {
+.about-rest {
   padding-top: 16px;
   padding-bottom: 20px;
   @media screen and (min-width: 1024px) {
@@ -10,7 +10,7 @@
   }
 }
 
-.aboutRest-tables-img {
+.about-rest-tables-img {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -18,7 +18,7 @@
   }
 }
 
-.aboutRest-interior-img {
+.about-rest-interior-img {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   @media screen and (max-width: 1023px) {
@@ -35,7 +35,7 @@
   }
 }
 
-.aboutRest-subtitle {
+.about-rest-subtitle {
   font-family: 'Times New Roman';
   font-weight: 400;
   font-size: 20px;
@@ -48,21 +48,21 @@
   }
 }
 
-.aboutRest-title {
+.about-rest-title {
   font-family: 'Film P3';
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
   letter-spacing: 0.3em;
   margin-bottom: 12px;
-  color: var(--subtitle-text-color);
+  color: var(--section-logo-text-color);
   @media screen and (min-width: 1024px) {
     margin-bottom: 24px;
     font-size: 64px;
   }
 }
 
-.aboutRest-descr {
+.about-rest-descr {
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -71,7 +71,7 @@
   }
 }
 
-.aboutRest-preferences {
+.about-rest-preferences {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -89,7 +89,7 @@
   }
 }
 
-.aboutRest-text {
+.about-rest-text {
   max-width: 258px;
   @media screen and (max-width: 1023px) {
     margin-bottom: 28px;
@@ -102,7 +102,7 @@
   }
 }
 
-.aboutRest-intro {
+.about-rest-intro {
   display: flex;
   @media screen and (max-width: 1023px) {
     flex-direction: column;
@@ -110,7 +110,7 @@
   }
 }
 
-.aboutRest-conclusion {
+.about-rest-conclusion {
   display: flex;
   @media screen and (min-width: 1024px) {
     align-items: center;
