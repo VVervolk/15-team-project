@@ -1,0 +1,15 @@
+.modal {
+  background-color: aquamarine;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 95%;
+  max-width: 712px;
+  position: absolute;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.modal__button {
+}
