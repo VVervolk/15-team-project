@@ -4,28 +4,121 @@
     padding-bottom: 32px;
     background: #FFFDEE;
 
-    //tablet
+    //tablet screen
     @media screen and (min-width: 1024px) {
         padding-top: 62px;
         padding-bottom: 40px;
     }
 
-    //desktop
+    //desktop screen
     @media screen and (min-width: 1280px) {
         padding-top: 72px;
         padding-bottom: 40px;
     }
 }
 
- .slogan {
+ .room-subtitle {
 
     //mobile screen
     margin-bottom: 8px;
 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+
+    color: #B4B4B4;
+
+    //tablet screen
     @media screen and (min-width: 1024px) {
         
         margin-bottom: 4px;
-        
+
+        font-size: 32px;
+       
     }
 }
 
+.room-logo {
+    //mobile screen
+    margin-bottom: 32px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0,3;
+    text-transform: uppercase;
+
+    color: #494848;
+
+    //tablet screen
+    @media screen and (min-width: 1024px) {
+        
+        margin-bottom: 62px;
+        font-size: 64px;
+        line-height: 1.08;
+    
+    }
+
+    //desktop screen
+    @media screen and (min-width: 1280px) {
+        
+        margin-bottom: 72px;
+    }
+    
+}
+
+.room-title {
+    //mobile screen
+    margin-bottom: 12px;
+
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: 0.05;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    //tablet screen
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 16px;
+
+        font-size: 30px;
+    }
+
+    //desktop screen
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 24px;
+
+        font-size: 36px;
+    }
+}
+
+.room-title-luxe {
+
+    text-transform: uppercase;
+}
+
+.room-about {
+    //mobile screen
+    margin-bottom: 32px;
+    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: 0,02;
+
+    color: #7A7A7A;
+
+    //tablet screen
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 176px;
+
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    //desktop screen
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 188px;
+    }
+}
