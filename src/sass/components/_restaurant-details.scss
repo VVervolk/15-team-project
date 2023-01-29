@@ -1,0 +1,161 @@
+.restaurant-details {
+  // text-align: center;
+  margin: 0 auto;
+  max-width: 414px;
+  // min-height: 735px;
+  // padding: 118px 30px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // background: rgba(0, 0, 0, 0.65);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('../images/restaurant-details/mobile/background-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../images/restaurant-details/mobile/background-mobile@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    //padding: 118px 60px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../images/restaurant-details/tablet/background-tablet.jpg');
+    // background-size: cover;
+    // background-size: 768px 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url('../images/restaurant-details/tablet/background-tablet@2x.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    // min-height: 620px;
+    // padding: 200px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url('../images/restaurant-details/desktop/background-desktop.jpg');
+    // background-size: cover;
+    // background-size: 1600px 600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url('../images/restaurant-details/desktop/background-desktop@2x.jpg');
+      }
+    }
+  }
+
+  &__logo {
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: var(--titles-color);
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+      // max-width: 696px;
+      font-size: 64px;
+      line-height: 1.08;
+    }
+  }
+
+  &__title {
+    margin-top: 12px;
+    // max-width: 360px;
+    // margin: 0 auto 30px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-bottom: 30px;
+    // width: 696px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--titles-color);
+
+    @media screen and (min-width: 1024px) {
+      // max-width: 696px;
+      margin-top: 16px;
+      font-size: 24px;
+      line-height: 1.21;
+    }
+  }
+
+  &__text {
+    max-width: 260px;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #bababa;
+
+    @media screen and (min-width: 1024px) {
+      max-width: 610px;
+      margin-top: 8px;
+      font-size: 16px;
+    }
+  }
+}
+
+.contentbox {
+  padding-top: 40px;
+  padding-left: 125px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 48px;
+    padding-left: 231px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 253px;
+  }
+}
+
+.swiper-container {
+  padding-left: 14px;
+  margin-top: 40px;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 231px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 253px;
+  }
+}
