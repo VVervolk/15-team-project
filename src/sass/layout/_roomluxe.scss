@@ -2,9 +2,10 @@
 
 .roomluxe {
     //mobile screen
+
     padding-top: 32px;
     padding-bottom: 32px;
-    background: #FFFDEE;
+    background: var(#fffdee);
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -29,7 +30,7 @@
     font-size: 20px;
     line-height: 1.15;
 
-    color: #B4B4B4;
+    color: var(--third-text-color);
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -46,13 +47,13 @@
     margin-bottom: 32px;
 
     font-weight: 700;
-    font-family: fantasy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     line-height: 1.08;
     letter-spacing: 0.3em;
     text-transform: uppercase;
 
-    color: #494848;
+    color: var(--logo-title-color);
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -80,7 +81,7 @@
     line-height: 1.15;
     letter-spacing: 0.05em;
 
-    color: #000000;
+    color: var(--subtitles-color);
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -118,7 +119,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
 
-    color: #7A7A7A;
+    color: var(--main-text-color);
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -136,7 +137,16 @@
 
 .room-main {
     margin-left: 140px;
-    max-width: 244px;
-    height: auto;
+    margin-bottom: 32px;
+   
 }
 
+.room-view {
+    margin-bottom: 72px;
+}
+
+.room-review {
+    
+    margin-bottom: 16px;
+
+}
