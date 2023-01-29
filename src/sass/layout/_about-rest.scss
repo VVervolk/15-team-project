@@ -13,6 +13,7 @@
 .about-rest-facilities-img {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  align-self: flex-start;
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
   }
@@ -51,11 +52,14 @@
 .about-rest-title {
   font-family: 'Film P3';
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.075;
   letter-spacing: 0.3em;
   margin-bottom: 12px;
   color: var(--section-logo-text-color);
+  @media screen and (min-width: 414px) {
+    font-size: 40px;
+  }
   @media screen and (min-width: 1024px) {
     margin-bottom: 24px;
     font-size: 64px;
@@ -77,8 +81,14 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  align-self: center;
-  margin-left: 20px;
+  @media screen and (max-width: 413px) {
+    margin-top: 20px;
+    align-self: flex-end;
+    max-width: 258px;
+  }
+  @media screen and (min-width: 414px) {
+    margin-left: 20px;
+  }
   @media screen and (min-width: 1024px) {
     font-size: 16px;
     margin-left: 48px;
@@ -112,8 +122,13 @@
 
 .about-rest-conclusion {
   display: flex;
-  @media screen and (min-width: 1024px) {
+  @media screen and (max-width: 413px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 414px) {
     align-items: center;
+  }
+  @media screen and (min-width: 1024px) {
     margin-top: -18px;
   }
   @media screen and (min-width: 1280px) {
