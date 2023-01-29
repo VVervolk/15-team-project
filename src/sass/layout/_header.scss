@@ -1,0 +1,113 @@
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 50;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+
+        @media screen and (min-width: 1024px) {
+            padding-top: 24px;
+            padding-bottom: 33px;
+        }
+    }
+
+    &__logo {
+        margin-right: 52px;
+
+        @media screen and (min-width: 1024px) {
+            margin-right: 207px;
+        }
+    }
+}
+
+.logo {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: var(--titles-color);
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: var(--active-color);
+
+    @media screen and (min-width: 1024px) {
+        font-size: 20px;
+        line-height: 1.2;
+
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+}
+
+
+.nav__icon {
+    margin-left: 6px;
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.nav__icon-connect {
+    @media screen and (min-width: 1024px) {
+        margin-left: 8px;
+        margin-right: 4px;
+    }
+}
+
+.nav__item {
+    display: flex;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 20px;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 72px;
+    }
+}
+
+.nav__connect {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+
+        width: 144px;
+        height: 40px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        color: var(--titles-color);
+
+        box-sizing: border-box;
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+    }
+}
