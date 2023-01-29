@@ -1,3 +1,5 @@
+
+
 .roomluxe {
     //mobile screen
     padding-top: 32px;
@@ -23,6 +25,7 @@
     margin-bottom: 8px;
 
     font-weight: 400;
+    font-family: Times New Roman;
     font-size: 20px;
     line-height: 1.15;
 
@@ -43,9 +46,10 @@
     margin-bottom: 32px;
 
     font-weight: 700;
+    font-family: fantasy;
     font-size: 40px;
     line-height: 1.08;
-    letter-spacing: 0,3;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
 
     color: #494848;
@@ -71,10 +75,10 @@
     //mobile screen
     margin-bottom: 12px;
 
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
     line-height: 1.15;
-    letter-spacing: 0.05;
-    text-transform: uppercase;
+    letter-spacing: 0.05em;
 
     color: #000000;
 
@@ -93,6 +97,10 @@
     }
 }
 
+.room-title .uppercase {
+    text-transform: uppercase;
+}
+
 .room-title-luxe {
 
     text-transform: uppercase;
@@ -101,11 +109,14 @@
 .room-about {
     //mobile screen
     margin-bottom: 32px;
+    max-width: 258px;
+    height: 76px;
+    text-align: left;
     
     font-weight: 600;
     font-size: 12px;
     line-height: 1.22;
-    letter-spacing: 0,02;
+    letter-spacing: 0.02em;
 
     color: #7A7A7A;
 
@@ -122,3 +133,10 @@
         margin-bottom: 188px;
     }
 }
+
+.room-main {
+    margin-left: 140px;
+    max-width: 244px;
+    height: auto;
+}
+
