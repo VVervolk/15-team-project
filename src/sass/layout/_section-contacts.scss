@@ -7,6 +7,12 @@
     padding: 56px 0px 73px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .section-contacts__position{
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .section-contacts__logo{
   text-transform: uppercase;
@@ -18,6 +24,10 @@
   letter-spacing: 0.3em;
   color: #494848;
   margin-bottom: 12px;
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+    line-height: 1.078;
+  }
 }
 
 .section-contacts__description{
@@ -26,6 +36,9 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 52px;
+  }
 }
 
 .contacts-list__contact{
@@ -35,6 +48,16 @@
   &:not(:last-child) {
       margin-bottom: 16px;
     }
+  
+  @media screen and (min-width: 1024px) {
+    display: block;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    &:nth-child(2n) {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .contact__title{
@@ -43,12 +66,15 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 1024px) {
+   margin-bottom: 8px;   
+  }
 }
 .contact__link{
   padding: 9px 8px 7px 9px;
   border: 0.5px solid var(--active-color);
   border-radius: 2px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -73,7 +99,10 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
-
+  @media screen and (min-width: 1024px) {
+    max-width: 285px;
+    margin-top: 48px;
+  }
 }
 .contact__svg{
   width: 24px;
@@ -84,5 +113,9 @@
 .map{
   width: 100%;
   height: 220px;
+  @media screen and (min-width: 1024px) {
+    max-width: 535px;
+    height: 412px;
+  }
   margin-top: 32px;
 }
