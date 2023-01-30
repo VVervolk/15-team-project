@@ -140,6 +140,7 @@
     @media screen and (min-width: 1024px) {
         display: flex;
         position: absolute;
+        content: "";
         top:0;
         right: 0;
         transform: translate( -16%, -6%);
@@ -178,7 +179,7 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
 }
 
-.room-view {
+.room-view-item {
     margin-bottom: 72px;
 }
 
@@ -187,6 +188,8 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     margin-bottom: 16px;
 
 }
+ 
+//button
 
 .button-container {
     display: flex;
@@ -199,6 +202,23 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
        margin-left: auto;
     }
 }
-.bb:hover,.bb:focus {
-    background-color: #188CE8;
+
+.room-details {
+    display: block;
+    margin-bottom: 16px;
+    color: var(---active-color);
+    background-color: var(--subtitles-color);
+}
+
+.room-modal {
+    color: var(---active-color);
+    background-color: var(--subtitles-color);
+}
+
+.room-details:hover, .room-details:focus,
+.room-modal:hover, .room-modal:focus {
+    color: var(--subtitles-color);
+    background-color: var(---active-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
