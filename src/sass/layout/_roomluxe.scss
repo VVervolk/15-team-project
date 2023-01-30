@@ -167,6 +167,12 @@
     
     
 }
+.room-view-item {
+    @media screen and (min-width: 1024px) {
+        max-width: 50;
+        max-height: auto;
+    }
+}
 
 .room-view {
     margin-bottom: 72px;
