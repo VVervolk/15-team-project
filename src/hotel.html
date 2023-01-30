@@ -36,49 +36,40 @@
                     >
                 </div>
                 <div class="view-overlay">
-                  <ul class="room-view-thumb">
-                    <li class="room-view-item">
-                      <picture>
-                        <source media="(min-width: 1280px)" 
-                        srcset="./images/roomluxe/slader/slide_l1.jpeg 1x, ./images/roomluxe/slader/slide_l2.jpeg 2x">
-                        <source media="(min-width: 1280px)" 
-                        srcset="./images/roomluxe/slader/slide_m1.jpeg 1x, ./images/roomluxe/slader/slide_m2.jpeg 2x">
-                        <source media="(min-width: 1280px)" 
-                        srcset="./images/roomluxe/slader/slide_s1.jpeg 1x, ./images/roomluxe/slader/slide_s2.jpeg 2x">
-                        <img class="room-view"
-                        src="./images/roomluxe/slader/slide_l1.jpeg" 
-                        alt="Room details">
-                      </picture>
-
-<!--
-                      <picture>
-                        <source 
-                            media="(min-width: 1200px)" 
-                            srcset="./images/team/imgl@1x.jpeg 1x, ./images/team/imgl@2x.jpeg 2x">
-                        <source 
-                            media="(min-width: 768px)" 
-                            srcset="./images/team/imgm@1x.jpeg 1x, ./images/team/imgm@2x.jpeg 2x">
-                        <source 
-                            media="(max-width: 767px)" 
-                            srcset="./images/team/imgsm@1x.jpeg 1x, ./images/team/imgsm@2x.jpeg 2x">
-                        <img class="team__img" 
-                            src="./images/demiyanenko.jpeg" 
-                            alt="desiner Igor Demiyanenko" 
-                            loading="lazy">      
-                    </picture>
-
-                  -->
-
-                    <!--<img class="room-view"
-                    src="./images/roomluxe/slader/slide_m1.jpeg" 
-                    alt="Room details"> -->
-                    </li>
-                    <li>
-                    <img class="room-view"
-                    src="./images/roomluxe/slader/slide2_m1.jpeg" 
-                    alt="Room details">
-                    </li>
-                  </ul>
+                  <div class="room-view-thumb">
+                    <div class="room-view-item">
+                      <img class="room-view-img"
+                    srcset="
+                    ./images/roomluxe/slader/slide_s1.jpeg 77w,
+                    ./images/roomluxe/slader/slide_s2.jpeg 154w,
+                    ./images/roomluxe/slader/slide_m1.jpeg 194w,
+                    ./images/roomluxe/slader/slide_m2.jpeg 388w, 
+                    ./images/roomluxe/slader/slide_l1.jpeg 254w,
+                    ./images/roomluxe/slader/slide_l2.jpeg 508w
+                    "
+                    sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 77px, 100vw"
+                    src="./images/roomluxe/slader/slide_l1.jpeg" 
+                    alt="Room details"
+                    >
+                    </div>
+                    
+                    <div class="room-view-item">
+                      <img class="room-view-img"
+                      srcset="
+                      ./images/roomluxe/slader/slide2_s1.jpeg 194w,
+                      ./images/roomluxe/slader/slide2_s2.jpeg 388w,
+                      ./images/roomluxe/slader/slide2_m1.jpeg 194w,
+                      ./images/roomluxe/slader/slide2_m2.jpeg 388w, 
+                      ./images/roomluxe/slader/slide2_l1.jpeg 254w,
+                      ./images/roomluxe/slader/slide2_l2.jpeg 508w
+                      "
+                      sizes="(min-width: 1280px) 254px, (min-width: 1024px) 194px, (min-width: 414px) 194px, 100vw"
+                      src="./images/roomluxe/slader/slide2_l1.jpeg" 
+                      alt="Room details"
+                      >
+                    </div>
+                    
+                  </div>
                   <div class="button-container">
                     <button class="room-review button" type="button">Детальніше
                       <a class="room-details" href=""></a>
@@ -91,7 +82,7 @@
 
         </div>
       </section>
-
+    
     </main>
     <include src="./partials/footer.html"></include>
 

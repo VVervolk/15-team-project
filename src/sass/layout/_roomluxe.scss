@@ -6,7 +6,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     background: #fffdee;
-
+   
     //tablet screen
     @media screen and (min-width: 1024px) {
         padding-top: 62px;
@@ -149,9 +149,13 @@
 .room-main {
     margin-left: 140px;
     margin-bottom: 32px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+   
+    @media screen and (min-width: 1024px) {
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+    }
+    
 }
 
 //slider details
@@ -167,11 +171,11 @@
     
     
 }
-.room-view-item {
-    @media screen and (min-width: 1024px) {
-        max-width: 50;
-        max-height: auto;
-    }
+
+.room-view-img {
+
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
 }
 
 .room-view {
