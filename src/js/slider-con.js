@@ -13,11 +13,13 @@ function swiperSlider() {
         speed: 1500,
         loop: true,
         //centeredSlides: true,
+        centeredSlides: true,
         // autoplay: {
         //     delay: 3000,
         //     disableOnInteraction: false,
         // },
-        slidesPerView: 1,
+
+        slidesPerView: 2,
         spaceBetween: 20,
         // pagination: {
         //     el: pagination,
@@ -51,21 +53,23 @@ function swiperSlider() {
           },
         },
         breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+          // when window width is >= 0px
+          0: {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 25,
           },
-          // when window width is >= 480px
-          768: {
+          // when window width is >= 1280px
+          1028: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 40,
+            centeredSlides: false,
           },
           // when window width is >= 640px
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
+          // 1280: {
+          //   slidesPerView: 3,
+          //   spaceBetween: 40,
+          // },
         },
       });
     });
