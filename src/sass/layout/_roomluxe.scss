@@ -1,5 +1,5 @@
 
-
+//text description room
 .roomluxe {
     //mobile screen
 
@@ -132,6 +132,8 @@
     }
 }
 
+// room main image
+
 .room-overlay {
 
     //tablet screen
@@ -152,7 +154,14 @@
 
 }
 
-.view-thumb {
+//slider details
+.view-overlay {
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+    }
+}
+.room-view-thumb {
     display: flex;
     gap: 40px;
 }
@@ -170,4 +179,11 @@
 .button-container {
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+        justify-content: center;
+        align-items: flex-end;
+
+       margin-left: auto;
+    }
 }
