@@ -1,0 +1,21 @@
+// buttons for mini-slider
+.swiper-btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .swiper-btn {
+    background-color: inherit;
+    border: transparent;
+    padding: 0;
+    &:hover,
+    &:active {
+      fill: var(--active-color);
+    }
+    &:disabled {
+      fill: var(--titles-color);
+    }
+  }
+  .swiper-button-prev {
+    margin-right: 32px;
+  }
