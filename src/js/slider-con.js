@@ -11,12 +11,13 @@ function swiperSlider() {
       // let pagination = slider.querySelector('.swiper-pagination');
       swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
+        loop: true,
         //centeredSlides: true,
         // autoplay: {
         //     delay: 3000,
         //     disableOnInteraction: false,
         // },
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 20,
         // pagination: {
         //     el: pagination,
