@@ -11,11 +11,14 @@ function swiperSlider() {
       // let pagination = slider.querySelector('.swiper-pagination');
       swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
+        loop: true,
+        //centeredSlides: true,
         centeredSlides: true,
         // autoplay: {
         //     delay: 3000,
         //     disableOnInteraction: false,
         // },
+
         slidesPerView: 2,
         spaceBetween: 20,
         // pagination: {
@@ -53,7 +56,7 @@ function swiperSlider() {
           // when window width is >= 0px
           0: {
             slidesPerView: "auto",
-            // centeredSlides: true,
+            centeredSlides: true,
             spaceBetween: 25,
           },
           // when window width is >= 1280px
