@@ -11,6 +11,7 @@
     @media screen and (min-width: 1024px) {
         padding-top: 62px;
         padding-bottom: 40px;
+        position: relative;
     }
 
     //desktop screen
@@ -19,6 +20,7 @@
         padding-bottom: 40px;
     }
 }
+
 
  .room-subtitle {
 
@@ -130,10 +132,28 @@
     }
 }
 
+.room-overlay {
+
+    //tablet screen
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translate( -16%, -6%);
+    }
+}
+
 .room-main {
     margin-left: 140px;
     margin-bottom: 32px;
-   
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+}
+
+.view-thumb {
+    display: flex;
 }
 
 .room-view {
@@ -144,4 +164,9 @@
     
     margin-bottom: 16px;
 
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
 }

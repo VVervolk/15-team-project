@@ -14,7 +14,7 @@
       <section class="roomluxe">
         <div class="container">
             <div class="room-thumb">
-                <div>
+                <div class="room-description">
                 <p class="room-subtitle">Amet minim mollit non</p>
                 <p class="room-logo">MIMIHO</p>
                 <h2 class="room-title uppercase">ДВОМІСНИЙ НОМЕР <span class="room-title">люкс</span></h2>
@@ -35,16 +35,29 @@
                     alt="Room image"
                     >
                 </div>
-                <img class="room-view"
+                <ul class="view-thumb">
+                  <li>
+                    <img class="room-view"
                 src="./images/roomluxe/slader/slide2_l1.jpeg" 
                 alt="Room details">
-                <button class="room-review button">Детальніше</button>
-                <button class="button">Переглянути ціни</button>
+                  </li>
+                  <li>
+                    <img class="room-view"
+                src="./images/roomluxe/slader/slide2_l1.jpeg" 
+                alt="Room details">
+                  </li>
+                </ul>
+                <div class="button-container">
+                  <button class="room-review button" type="button">Детальніше
+                    <a class="room-details" href=""></a>
+                  </button>
+                  <button class="button" type="button">Переглянути ціни</button>
+                </div>
             </div>
 
 
         </div>
-    </section>
+      </section>
 
     </main>
     <include src="./partials/footer.html"></include>
