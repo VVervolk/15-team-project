@@ -9,12 +9,13 @@
 
 .page-footer__flex-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   @media (min-width: 1024px) {
   }
 }
 
 .page-footer__logo {
+  margin-left: 45px;
   align-self: center;
 
   color: var(--active-color);
@@ -24,6 +25,7 @@
   font-size: 40px;
   line-height: 1.08;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
 
   @media (min-width: 1024px) {
     font-size: 64px;
@@ -32,6 +34,7 @@
 }
 
 .page-footer__pos {
+  margin-right: 15px;
   @media (min-width: 1024px) {
     display: flex;
     gap: 137px;
@@ -62,6 +65,7 @@
 
 .page-footer__contacts {
   display: flex;
+  flex-direction: row-reverse;
   gap: 20px;
   @media (min-width: 1024px) {
     gap: 12px;
