@@ -1,0 +1,105 @@
+.details-hotel {
+    background-color: black;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+
+    @include mobile {
+      }
+    
+    @include tablet {
+        padding-top: 48px;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    @include desktop {
+        padding-left: 52px;
+        padding-right: 85px;
+    }
+}
+
+.details-hotel__uptitle {
+    font-family: 'Film P3';
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 127px;
+    height: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    color: var(--titles-color);
+  
+    @include tablet {
+        font-size: 64px;
+        line-height: calc(69 / 64);
+        width: 202px;
+        height: 69px;
+        margin-bottom: 16px;
+    }
+}
+
+.details-hotel__title {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    color: var(--titles-color);
+  
+    @include tablet {
+        font-size: 24px;
+        line-height: calc(29 / 24);
+        margin-bottom: 8px;
+    }
+}
+
+.details-hotel__subtitle {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    color: var(--subtitle-text-color);
+
+    @include mobile {
+        width: 243px;
+    }
+  
+    @include tablet {
+        width: 549px;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        margin-bottom: 40px;
+    }
+  
+    @include desktop {
+        width: 595px;
+    }
+}
+
+.details-hotel-list {
+}
+
+.details-hotel-list__item {
+}
+
+.details-hotel__btn {
+}
+
+.details-hotel__link {
+}
+
+.details-hotel-swiper {
+    display: flex;
+    gap: 32px;
+}
+
+.details-hotel-swiper__item {
+}
+
+.details-hotel-swiper__icon {
+    fill: var(--swiper-btn-white-color);
+}
