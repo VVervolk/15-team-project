@@ -23,8 +23,11 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: #000000;
 }
-
+.modal__button:hover {
+  color: #c79002;
+}
 .form__title {
   font-family: "Times New Roman";
   font-weight: 700;
