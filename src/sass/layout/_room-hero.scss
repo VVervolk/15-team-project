@@ -18,13 +18,15 @@
     width: 100%;
     margin-top: 0;
     @media screen and (min-width: 1024px) {
-      padding-left: calc((100vw - 1024px) / 2);
-      padding-right: calc((100vw - 1024px) / 2);
+      padding-left: calc((100vw - 1024px + 94px) / 2);
+      padding-right: calc((100vw - 1024px + 94px) / 2);
+      top: 341px;
     }
     @media screen and (min-width: 1280px) {
-        padding-left: calc((100vw - 1280px) / 2);
-        padding-right: calc((100vw - 1280px) / 2);
-      }
+      padding-left: calc((100vw - 1280px + 170px) / 2);
+      padding-right: calc((100vw - 1280px + 170px) / 2);
+      top: 412px;
+    }
   }
   .swiper-btn > svg {
     width: 40px;
@@ -92,9 +94,9 @@
 }
 
 .room-hero_text {
-    @media screen and (max-width: 1023px){
-        margin-bottom: 16px;
-    }
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 16px;
+  }
 }
 
 .room-hero_roomtype {
@@ -160,10 +162,14 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
+  @media screen and (max-width: 348px) {
+    max-width: 232px;
+    padding: 10px;
+  }
   @media screen and (max-width: 1023px) {
     transform: translateY(50%);
   }
-  @media screen and (min-width: 1024px) and (max-width: 1279px){
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
     position: absolute;
     bottom: 42px;
     right: -80%;
@@ -197,6 +203,10 @@
     top: 8%;
     right: calc((100vw - 414px + 30px) / 2);
     z-index: 2;
+    @media screen and (max-width: 384px) {
+        top: 14%;
+        right: 5%;
+      }
     @media screen and (min-width: 1024px) {
       display: none;
     }
