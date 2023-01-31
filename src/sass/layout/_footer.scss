@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   @media (min-width: 1024px) {
+    justify-content: space-around;
   }
 }
 
@@ -28,6 +29,8 @@
   text-transform: uppercase;
 
   @media (min-width: 1024px) {
+    margin-left: 0;
+
     font-size: 64px;
     line-height: 1.08;
   }
@@ -36,6 +39,8 @@
 .page-footer__pos {
   margin-right: 15px;
   @media (min-width: 1024px) {
+    margin-right: 0;
+
     display: flex;
     gap: 137px;
   }
