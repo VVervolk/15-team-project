@@ -1,8 +1,8 @@
 function swiperSlider() {
-  const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
+  const miniSlider = document.querySelectorAll('[data-slider="mini-slider"]');
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-  if (teamMain) {
-    teamMain.forEach(slider => {
+  if (miniSlider) {
+    miniSlider.forEach(slider => {
       //
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
@@ -11,12 +11,15 @@ function swiperSlider() {
       // let pagination = slider.querySelector('.swiper-pagination');
       swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
+        // loop: true,
         //centeredSlides: true,
+        centeredSlides: true,
         // autoplay: {
         //     delay: 3000,
         //     disableOnInteraction: false,
         // },
-        slidesPerView: 3,
+
+        slidesPerView: 2,
         spaceBetween: 20,
         // pagination: {
         //     el: pagination,
@@ -50,21 +53,23 @@ function swiperSlider() {
           },
         },
         breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+          // when window width is >= 0px
+          0: {
+            slidesPerView: "auto",
+            // centeredSlides: true,
+            spaceBetween: 25,
           },
-          // when window width is >= 480px
-          768: {
+          // when window width is >= 1280px
+          1028: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 40,
+            centeredSlides: false,
           },
           // when window width is >= 640px
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
+          // 1280: {
+          //   slidesPerView: 3,
+          //   spaceBetween: 40,
+          // },
         },
       });
     });
