@@ -32,7 +32,7 @@
     font-size: 20px;
     line-height: 1.15;
 
-    color: var(--third-text-color);
+    color: var(--comment-text-color);
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -55,7 +55,7 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
 
-    color: var(--logo-title-color);
+    color: var(--section-logo-text-color);
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -78,7 +78,7 @@
     //mobile screen
     margin-bottom: 12px;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Times New Roman;
     font-size: 24px;
     line-height: 1.15;
     letter-spacing: 0.05em;
