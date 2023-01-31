@@ -96,6 +96,11 @@
 }
 
 .form__position-second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__position-third {
   background-color: teal;
 }
 

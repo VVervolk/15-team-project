@@ -6,7 +6,7 @@
       </svg>
     </button>
 
-    <h2 class="form__title">забронювати столик</h2>
+    <h2 class="form__title">забронювати номер</h2>
     <form class="form__form" name="contact-form" autocomplete="on">
       <div class="form__position-second">
         <div class="form__field">
@@ -39,14 +39,14 @@
             name="form__numberpeople"
             id="form__numberpeople-select"
           >
-            <option value="1">1</option>
-            <option selected value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="6">6</option>
-            <option value="8">8</option>
+            <option value="Одномісний">одномісний</option>
+            <option selected value="Двомісний">двомісний</option>
+            <option value="Сімейний">сімейний</option>
+            <option value="Одномісний люкс">Одномісний люкс</option>
+            <option value="Двомісний люкс">Двомісний люкс</option>
+            <option value="Сімейний люкс">Сімейний люкс</option>
           </select>
-          <p class="form__label">Столик на яку кількість осіб?</p>
+          <p class="form__label">Категорія номеру</p>
         </div>
 
         <div class="form__field">
@@ -55,7 +55,15 @@
             type="date"
             value="2022-06-01"
           />
-          <p class="form__label">На яку дату бронювати?</p>
+          <p class="form__label">Дата заїзду</p>
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input textinselect"
+            type="date"
+            value="2022-06-01"
+          />
+          <p class="form__label">Дата виїзду</p>
         </div>
       </div>
       <button class="form__button" type="button">оформити бронювання</button>
