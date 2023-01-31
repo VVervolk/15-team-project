@@ -6,21 +6,29 @@
       </svg>
     </button>
 
-    <h2 class="form__title">забронювати номер</h2>
+    <h2 class="form__title">ціни на номер</h2>
+
     <form class="form__form" name="contact-form" autocomplete="on">
       <div class="form__position-third">
+        <div class="form__position-third">
+          <p class="textinselect" style="margin-left: 12px">Двомісний люкс</p>
+          <p class="form__label">Категорія номеру</p>
+        </div>
         <div class="form__field">
           <input
             class="form__input"
             id="user-name"
-            type="text"
+            type="number"
             name="user-name"
-            placeholder="Ваше ім’я"
+            placeholder="1"
             required
+            min="1"
           />
-          <label class="form__label" for="user-name"
-            >На кого забронювати номер?</label
-          >
+          <label class="form__label" for="user-name">кількість ночей</label>
+        </div>
+        <div class="form__position-third">
+          <p class="textinselect" style="margin-left: 12px">1000</p>
+          <p class="form__label">грн</p>
         </div>
       </div>
       <button class="form__button" type="button">оформити бронювання</button>
