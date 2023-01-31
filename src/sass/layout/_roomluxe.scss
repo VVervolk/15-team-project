@@ -84,6 +84,7 @@
     letter-spacing: 0.05em;
 
     color: var(--subtitles-color);
+    text-transform: uppercase;
 
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -100,9 +101,9 @@
     }
 }
 
-.room-title .uppercase  {
+.common{
     
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .room-about {
