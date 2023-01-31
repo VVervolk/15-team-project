@@ -1,8 +1,9 @@
 .restaurant-details {
+  position: relative;
   // text-align: center;
   margin: 0 auto;
   max-width: 414px;
-  max-height: 735px;
+  height: 735px;
   // min-height: 735px;
   // padding: 118px 30px;
   // padding-top: 200px;
@@ -29,7 +30,7 @@
 
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
-    max-height: 620px;
+    height: 620px;
     //padding: 118px 60px;
     background-image: linear-gradient(
         to right,
@@ -56,7 +57,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    max-height: 620px;
+    height: 620px;
     // padding: 200px 0;
     background-image: linear-gradient(
         to right,
@@ -159,7 +160,7 @@
     padding-left: 231px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 253px;
+    padding-left: 257px;
   }
 }
 
@@ -179,10 +180,10 @@
   margin-top: 40px;
 
   @media screen and (min-width: 1024px) {
-    padding-left: 231px;
+    padding-left: 270px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 253px;
+    padding-left: 270px;
   }
 
   .swiper {
@@ -224,7 +225,73 @@
       max-width: 270px !important;
     }
     @media screen and (min-width: 1280px) {
-      max-width: 370px !important;
+      max-width: 320px !important;
     }
+  }
+}
+
+.modal-button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--active-color);
+
+  width: 236px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    border: 1px solid var(--active-color);
+    color: var(--active-color);
+  }
+}
+
+.link-button {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+  padding-top: 12px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--active-color);
+
+  width: 236px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    border: 1px solid var(--active-color);
+    color: var(--active-color);
+  }
+}
+
+.details-buttons {
+  position: absolute;
+  top: 583px;
+  left: 89px;
+
+  @media screen and (min-width: 1024px) {
+    top: 412px;
+    left: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 414px;
+    left: 85px;
   }
 }
