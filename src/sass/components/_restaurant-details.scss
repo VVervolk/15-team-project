@@ -2,6 +2,7 @@
   // text-align: center;
   margin: 0 auto;
   max-width: 414px;
+  max-height: 735px;
   // min-height: 735px;
   // padding: 118px 30px;
   // padding-top: 200px;
@@ -11,6 +12,7 @@
     url('../images/restaurant-details/mobile/background-mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -27,6 +29,7 @@
 
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
+    max-height: 620px;
     //padding: 118px 60px;
     background-image: linear-gradient(
         to right,
@@ -53,7 +56,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
-    // min-height: 620px;
+    max-height: 620px;
     // padding: 200px 0;
     background-image: linear-gradient(
         to right,
@@ -62,7 +65,7 @@
       ),
       url('../images/restaurant-details/desktop/background-desktop.jpg');
     // background-size: cover;
-    // background-size: 1600px 600px;
+    // background-size: 1280px 620px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
