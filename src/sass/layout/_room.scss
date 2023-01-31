@@ -1,7 +1,6 @@
 .room-section{
-    padding-top: 48px;
-    padding-bottom: 48px;
-    box-sizing: border-box;
+    padding: 32px 0;
+    // box-sizing: border-box;
 }
 
 .room-section__title{
@@ -11,6 +10,7 @@
     font-size: 32px;
     line-height: 1.15;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .room-amenities__title{
@@ -20,6 +20,7 @@
     font-size: 24px;
     line-height: 1.16;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .room-section__text,
@@ -37,6 +38,9 @@
 }
 
 .back-hotel-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-family: 'Montserrat';
     color: var(--secondary-text-color);
     font-style: normal;
@@ -44,8 +48,17 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+
+    &:hover,
+    &:active{
+        color: var(--active-color);
+    }
 }
 
 .back-hotel-icon{
-    fill: var(--secondary-text-color);
+    fill: var(--titles-color);
+    &:hover,
+    &:active {
+    fill: var(--active-color);
+  }
 }
