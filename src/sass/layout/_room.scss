@@ -4,7 +4,44 @@
     box-sizing: border-box;
 }
 
+.room-section__title{
+    font-family: 'Times New Roman';
+    color: var(--subtitles-color);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.room-amenities__title{
+    font-family: 'Times New Roman';
+    color: var(--subtitles-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    text-transform: uppercase;
+}
+
+.room-section__text,
+.room-amenities__text{
+    font-family: 'Montserrat';
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+}
 
 .room-reserve-btn{
     display: block;
+}
+
+.back-hotel-link{
+    font-family: 'Montserrat';
+    color: var(--secondary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
 }
