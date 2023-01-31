@@ -1,8 +1,8 @@
 function swiperSlider() {
-  const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
+  const miniSlider = document.querySelectorAll('[data-slider="mini-slider"]');
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-  if (teamMain) {
-    teamMain.forEach(slider => {
+  if (miniSlider) {
+    miniSlider.forEach(slider => {
       //
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
@@ -11,11 +11,14 @@ function swiperSlider() {
       // let pagination = slider.querySelector('.swiper-pagination');
       swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
+        // loop: true,
+        //centeredSlides: true,
         centeredSlides: true,
         // autoplay: {
         //     delay: 3000,
         //     disableOnInteraction: false,
         // },
+
         slidesPerView: 2,
         spaceBetween: 20,
         // pagination: {
@@ -53,7 +56,7 @@ function swiperSlider() {
           // when window width is >= 0px
           0: {
             slidesPerView: "auto",
-            centeredSlides: true,
+            // centeredSlides: true,
             spaceBetween: 25,
           },
           // when window width is >= 1280px
