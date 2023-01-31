@@ -5,7 +5,7 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 95%;
-  height: 95%;
+  max-height: 95%;
   overflow-y: auto;
   max-width: 414px;
   position: absolute;
@@ -44,8 +44,8 @@
   border-radius: 2px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: transparent;
 }
 
@@ -60,6 +60,11 @@
   color: #808080;
 }
 
+.textinselect--space {
+  margin-bottom: 28px;
+  margin-left: 0;
+}
+
 .form__label {
   font-family: "Montserrat";
   font-weight: 500;
@@ -68,6 +73,9 @@
   letter-spacing: 0.02em;
   color: #c79002;
   margin-left: 12px;
+}
+.form__label--space {
+  margin-left: 0;
 }
 .form__button {
   display: block;
@@ -112,6 +120,16 @@
   gap: 20px;
 }
 
+.form__position-third-part2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
 // .form__typeroom {
 //   margin-bottom: 28px;
 //   font-family: "Times New Roman";
