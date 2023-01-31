@@ -1,11 +1,11 @@
 
 //text description room
-.roomluxe {
+.roomluxe, .doubleroom {
     //mobile screen
 
     padding-top: 32px;
     padding-bottom: 32px;
-    background: #fffdee;
+    //background: #fffdee;
    
     //tablet screen
     @media screen and (min-width: 1024px) {
