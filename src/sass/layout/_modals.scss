@@ -113,6 +113,15 @@
   flex-direction: column;
   gap: 20px;
 }
+.form__position-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 1024px) {
+    gap: 16px;
+    flex-direction: row;
+  }
+}
 
 .form__position-third {
   display: flex;
@@ -153,5 +162,12 @@
 .form__field {
   @media screen and (min-width: 1024px) {
     width: calc((100% - 16px) / 2);
+  }
+}
+.form__field--column {
+  @media screen and (min-width: 1024px) {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
