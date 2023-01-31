@@ -24,6 +24,7 @@
     font-size: 36px;
     line-height: 1.08;
     letter-spacing: 0.3em;
+    text-transform: uppercase;
     color: var(--titles-color);
 
     @media screen and (min-width: 1024px) {
@@ -64,6 +65,7 @@
 
 .nav__icon {
     margin-right: 0;
+    fill: var(--active-color);
 
     @media screen and (min-width: 1024px) {
         margin-right: 8px;
@@ -114,4 +116,8 @@
     @media screen and (min-width: 1280px) {
         display: flex;
     }
+}
+
+.social__icon {
+    fill: var(--active-color);
 }
