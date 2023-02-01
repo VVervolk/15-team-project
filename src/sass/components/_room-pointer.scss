@@ -1,27 +1,19 @@
-/ buttons for mini-slider room
+// buttons for mini-slider room
 .swiper-room-btns {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
+
     @media screen and (min-width: 1024px) {
       margin-top: 32px;
+      margin-bottom: 40px;
+      justify-content: flex-end;
     }
+
     @media screen and (min-width: 1280px){
-      margin-top: 36px;
+      margin-top: 40px;
+      
     }
   }
-  .swiper-btn {
-    background-color: inherit;
-    border: transparent;
-    padding: 0;
-    &:hover,
-    &:active {
-      fill: var(--active-color);
-    }
-    &:disabled {
-      fill: var(--titles-color);
-    }
-  }
-  .swiper-button-prev {
-    margin-right: 32px;
-  }
+  
