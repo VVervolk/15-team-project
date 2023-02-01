@@ -1,66 +1,54 @@
 .minislider {
   // для кожного тут свої позначення
-  margin-top: 62px;
-  @media screen and (min-width: 1028px) {
+  margin-top: 32px;
+  @media screen and (min-width: 1024px) {
     align-self: flex-end;
+    // 32px
     margin-top: -32px;
   }
   @media screen and (min-width: 1280px) {
     margin-top: -127px;
   }
   .swiper {
+    // тінь
+    margin-top: -60px;
+    padding-top: 60px;
     @media screen and (min-width: 414px) {
       margin-right: -15px;
     }
-    @media screen and (min-width: 1028px) and (max-width: 1279px) {
-      margin-right: 13px;
+    @media screen and (min-width: 1024px) {
+      margin-right: -20px;
+      margin-left: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
   .swiper-wrapper {
-    @media screen and (min-width: 1028px) {
+    @media screen and (min-width: 1024px) {
       max-width: 428px;
     }
     @media screen and (min-width: 1280px) {
       max-width: 548px;
     }
   }
+  // спільне
   .swiper-slide {
     max-width: 245px !important;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    @media screen and (max-width: 1027px) {
+    & .swiper-inner > img {
+      object-fit: contain;
+    }
+    @media screen and (max-width: 1023px) {
       &.swiper-slide-next,
       &.swiper-slide-prev {
         opacity: 0.5;
       }
     }
-    @media screen and (min-width: 1028px) {
+    @media screen and (min-width: 1024px) {
       max-width: 194px !important;
     }
     @media screen and (min-width: 1280px) {
       max-width: 254px !important;
     }
   }
-  // buttons
- 
-}
-
-.swiper-btns {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-.swiper-btn {
-  background-color: inherit;
-  border: transparent;
-  padding: 0;
-  &:hover,
-  &:active {
-    fill: var(--active-color);
-  }
-  &:disabled {
-    fill: var(--titles-color);
-  }
-}
-.swiper-button-prev {
-  margin-right: 32px;
 }
