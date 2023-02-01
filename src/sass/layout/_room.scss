@@ -1,5 +1,14 @@
 .room-section{
     padding: 32px 0;
+
+    @media screen and (min-width: 1024px){
+       padding-top: 50px;
+       padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px){
+        padding: 48px 0;
+    }
 }
 
 .room-section__title{
@@ -76,6 +85,11 @@
 
     @media screen and (min-width: 1024px){
         margin-bottom: 32px;
+        margin-left: 495px;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-left: 555px;
     }
 }
 
@@ -91,18 +105,17 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    margin-bottom: 32px;
-    width: 315px;
-    height: 20px;
+
 
     @media screen and (min-width: 1024px){
-        margin-bottom: 40px;
-        width: 315px;
-        height: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 495px;
     }
 
     @media screen and (min-width: 1280px){
-        margin-bottom: 48px;
+        margin-left: 430px;
     }
 
     &:hover,
