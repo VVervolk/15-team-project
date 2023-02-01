@@ -21,6 +21,7 @@
     }
 }
 
+
 .room-description {
     display: flex;
     flex-direction: column;
@@ -146,21 +147,21 @@
 
     //tablet screen
     @media screen and (min-width: 1024px) {
-           display: flex;
-           margin-top: -33px;
-     //   position: absolute;
-     //   content: "";
-   //     top:0;
-    //    right: 0;
-   //     transform: translate( -180px, -33px);
+        display: flex;
 
-
-    }
-     //tablet screen
-    @media screen and (min-width: 1024px) {
-        
+        position: absolute;
+        content: "";
+        top:0;
+        right: 0;
         transform: translate( -112px, -32px);
     }
+    //desktop
+    @media screen and (min-width: 1280px) {
+        
+        transform: translate( -180px, -33px);
+
+    }
+     
 }
 
 .room-main {
