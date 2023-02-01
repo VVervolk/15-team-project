@@ -38,12 +38,12 @@
     border-radius: 25px;
     padding: 14px 35px;
     color: var(--active-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
     &:hover,
     &:focus {
-      background-color: var(--titles-color);
+        background-color: var(--titles-color);
         border: 2px solid var(--active-color);
     }
   }
@@ -55,11 +55,11 @@
         border-radius: 25px;
         padding: 14px 65px;
         color: var(--active-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
-      background-color: var(--titles-color);
+        background-color: var(--titles-color);
         border: 2px solid var(--active-color);
     }
   }
@@ -73,7 +73,7 @@
         border-radius: 25px;
         padding: 18px 38px;
         color: var(--titles-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
@@ -92,7 +92,7 @@
             border-radius: 2px;
             color: var(--titles-color);
             padding: 18px 117px;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
@@ -110,7 +110,7 @@
             border-radius: 25px;
             color: var(--titles-color);
             padding: 20px 43px;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
@@ -129,7 +129,7 @@
         border-radius: 2px;
         color: var(--titles-color);
         padding: 20px 43px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
