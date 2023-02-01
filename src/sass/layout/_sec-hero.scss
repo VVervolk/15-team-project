@@ -1,13 +1,5 @@
-
 .section-hero {
     width: 100vw;
-}
-
-.hero-homepage {
-    position: relative;
-    padding: 181px 15px 102px 15px;
-
-    text-align: center;
 
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.65),
@@ -16,14 +8,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1280px;
-    margin: 0 auto;
+
 
     @include retina {
         background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(/src/images/homepage_hero/homepage-hero-bg-mob-2x.jpg);
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/homepage_hero/homepage-hero-bg-mob-2x.jpg);
     }
 
     @include tablet {
@@ -31,29 +22,44 @@
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/homepage_hero/homepage-hero-bg-tablet.jpg);
-        padding: 188px 47px 257px;
+
 
         @include retina {
-                background-image: linear-gradient(0deg,
-                        rgba(0, 0, 0, 0.65),
-                        rgba(0, 0, 0, 0.65)),
-                    url(/src/images/homepage_hero/homepage-hero-bg-tablet-2x.jpg);
-            }
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/homepage_hero/homepage-hero-bg-tablet-2x.jpg);
+        }
     }
 
-        @include desktop {
+    @include desktop {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/homepage_hero/homepage-hero-bg-desktop.jpg);
-        padding: 164px 85px 257px;
+
 
         @include retina {
-                background-image: linear-gradient(0deg,
-                        rgba(0, 0, 0, 0.65),
-                        rgba(0, 0, 0, 0.65)),
-                    url(/src/images/homepage_hero/homepage-hero-bg-desktop-2x.jpg);
-            }
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/homepage_hero/homepage-hero-bg-desktop-2x.jpg);
+        }
+    }
+}
+
+.hero-homepage {
+    position: relative;
+    padding: 181px 15px 102px 15px;
+
+    text-align: center;
+
+    @include tablet {
+        padding: 188px 47px 257px;
+    }
+
+    @include desktop {
+        padding: 164px 85px 257px;
     }
 }
 
@@ -218,7 +224,7 @@
         right: 47px;
     }
 
-        @include desktop {
+    @include desktop {
         position: absolute;
         bottom: 65px;
         right: 85px;
@@ -240,7 +246,7 @@
         left: 47px;
     }
 
-        @include desktop {
+    @include desktop {
         display: none;
     }
 }
