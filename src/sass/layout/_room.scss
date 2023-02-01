@@ -30,7 +30,9 @@
 }
 
 .room-amenities__item{
-    margin-bottom: 32px;
+    &:not(:last-child){
+        margin-bottom: 32px;
+        }
 }
 
 .room-amenities__card{
@@ -57,8 +59,8 @@
     letter-spacing: 0.02em;
     margin-bottom: 32px;
     max-width: 757px;
-    
 }
+
 .room-amenities__text{
     font-family: 'Montserrat';
     color: var(--main-text-color);
@@ -67,14 +69,14 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     width: 400px;
-
-    &:not(:last-child){
-        margin-bottom: 32px;
-        }
 }
 
 .room-reserve-btn {
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px){
+        margin-bottom: 32px;
+    }
 }
 
 .back-hotel-link{
@@ -89,6 +91,15 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px){
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-bottom: 48px;
+    }
 
     &:hover,
     &:active{
