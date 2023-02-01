@@ -58,6 +58,7 @@
   align-items: center;
 
   
+  
   &:not(:last-child) {
       margin-bottom: 16px;
     }
@@ -84,7 +85,7 @@
   }
 }
 .contact__link{
-  padding: 9px 8px 7px 9px;
+  padding: 9px 8px 7px 8px;
   border: 0.5px solid var(--active-color);
   border-radius: 2px;
   display: inline-flex;
@@ -99,16 +100,12 @@
   color: #494848;
 }
 .contact__tel--hotel{
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.214;
-  letter-spacing: 0.02em;
   color: #494848;
   &:not(:last-child) {
-    margin-right: 12px;
+    margin-right: 10px;
   }
 }
-@media screen and (min-width: 313px) and (max-width: 414px) {
+@media screen and (min-width: 319px) and (max-width: 414px) {
   .contact__tel--alignment {
     margin-left: 33px;
   }
@@ -118,6 +115,10 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+  @media screen and (max-width: 1023px) {
+    max-width: 260px;
+    margin-left: 124px;
+  }
   @media screen and (min-width: 1024px) {
     max-width: 285px;
     margin-top: 48px;
@@ -134,21 +135,17 @@
 
 @media screen and (max-width: 1023px) {
   .contact__link--restaurant {
-      margin-left: 31px;
+      margin-left: 22px;
     }
   
     .contact__link--hotel {
-      margin-left: 57px;
+      margin-left: 54px;
       display: inline-flex;
       justify-content: start;
       align-items: center;
-      @media screen and (min-width: 314px) {
+      @media screen and (min-width: 319px) {
         flex-wrap: wrap;
       }
-    }
-    
-    .contact__link--adress {
-      margin-left: 121px;
     }
 }
 .contact--active {
@@ -179,3 +176,4 @@
     height: 412px;
   }
 }
+

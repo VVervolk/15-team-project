@@ -1,0 +1,53 @@
+<div class="backdrop is-hidden" data-modal-third>
+  <div class="modal">
+    <button class="modal__button" type="button" data-modal-close-third>
+      <svg class="end" width="24" height="24">
+        <use href="./images/icons-svg.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="form__title">ціни на номер</h2>
+
+    <form class="form__form" name="contact-form" autocomplete="on">
+      <div class="form__position-third">
+        <div class="form__field">
+          <p class="textinselect textinselect--space">Двомісний люкс</p>
+          <p class="form__label form__label--space">Категорія номеру</p>
+        </div>
+        <div class="form__position-third-part2">
+          <div class="form__field">
+            <select
+              class="form__input textinselect"
+              name="form__numberpeople"
+              id="form__numberpeople-select"
+            >
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+
+            <label class="form__label" for="user-name">кількість ночей</label>
+          </div>
+          <div class="form__field">
+            <input
+              class="form__input"
+              id="user-name"
+              type="number"
+              name="user-name"
+              placeholder="1000"
+              required
+              min="1"
+            />
+            <label class="form__label" for="user-name">грн</label>
+          </div>
+        </div>
+      </div>
+      <button data-modal-close-third class="form__button" type="submit">
+        оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>
