@@ -1,0 +1,76 @@
+<div class="backdrop is-hidden" data-modal-second>
+  <div class="modal">
+    <button class="modal__button" type="button" data-modal-close-second>
+      <svg class="end" width="24" height="24">
+        <use href="./images/icons-svg.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="form__title">забронювати номер</h2>
+    <form class="form__form" name="contact-form" autocomplete="on">
+      <div class="form__position-second">
+        <div class="form__position-column">
+          <div class="form__field">
+            <input
+              class="form__input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              placeholder="Ваше ім’я"
+              required
+            />
+            <label class="form__label" for="user-name"
+              >На кого забронювати номер?</label
+            >
+          </div>
+          <div class="form__field">
+            <input
+              class="form__input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              placeholder="+38 (___) ___-__-__"
+              required
+            />
+            <label class="form__label" for="user-name">Номер телефону</label>
+          </div>
+        </div>
+
+        <div class="form__field form__field--column">
+          <select
+            class="form__input textinselect"
+            name="form__numberpeople"
+            id="form__numberpeople-select"
+          >
+            <option value="Одномісний">Одномісний</option>
+            <option value="Двомісний">Двомісний</option>
+            <option value="Сімейний">Сімейний</option>
+            <option value="Одномісний люкс">Одномісний люкс</option>
+            <option selected value="Двомісний люкс">Двомісний люкс</option>
+            <option value="Сімейний люкс">Сімейний люкс</option>
+          </select>
+          <p class="form__label">Категорія номеру</p>
+        </div>
+        <div class="form__position-column">
+          <div class="form__field">
+            <input
+              class="form__input textinselect"
+              type="date"
+              value="2022-06-01"
+            />
+            <p class="form__label">Дата заїзду</p>
+          </div>
+          <div class="form__field">
+            <input
+              class="form__input textinselect"
+              type="date"
+              value="2022-06-01"
+            />
+            <p class="form__label">Дата виїзду</p>
+          </div>
+        </div>
+      </div>
+      <button class="form__button" type="submit">оформити бронювання</button>
+    </form>
+  </div>
+</div>
