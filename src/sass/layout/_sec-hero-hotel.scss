@@ -18,10 +18,6 @@
     max-width: 1280px;
     margin: 0 auto;
 
-    @media screen and (min-width: 414px) and (max-width: 1023px) {
-            width: 414px;
-        }
-
     @media screen and (min-width: 1024px) {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.65),
@@ -64,25 +60,14 @@
 }
 
 .hero__name-hotel {
-    font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;    
+    font-weight: 600;
+    letter-spacing: 0.02em;
     color: var(--titles-color);
-    margin-bottom: 40px;
-
+    
     @media screen and (max-width: 1023px) {
-            margin-bottom: 178px;
-        }
-
-    @media screen and (min-width: 1024px) {
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 56px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 64px;
+        margin-bottom: 176px;
     }
 }
 
@@ -108,11 +93,28 @@
 
     padding: 8px 3px 9px 6px;
 
-    @media screen and (max-width: 414px) {
-            position: absolute;
-            top: 70px;
-            right: 15px;
-        }
+    @media screen and (max-width: 1023px) {
+        position: absolute;
+        top: 70px;
+        right: 15px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 285px;
+        height: 56px;
+        padding: 8px 8px 8px 10px;
+        font-size: 16px;
+        line-height: 1.25;
+        position: absolute;
+        bottom: 64px;
+        left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: 64px;
+        left: 85px;
+    }
 }
 
 .hero__location-icon {
