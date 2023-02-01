@@ -19,20 +19,41 @@
     max-width: 1280px;
     margin: 0 auto;
 
-    @media screen and (min-width: 1024px) {
+    @include retina {
+        background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/homepage_hero/homepage-hero-bg-mob-2x.jpg);
+    }
+
+    @include tablet {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/homepage_hero/homepage-hero-bg-tablet.jpg);
         padding: 188px 47px 257px;
+
+        @include retina {
+                background-image: linear-gradient(0deg,
+                        rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                    url(/src/images/homepage_hero/homepage-hero-bg-tablet-2x.jpg);
+            }
     }
 
-    @media screen and (min-width: 1280px) {
+        @include desktop {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/homepage_hero/homepage-hero-bg-desktop.jpg);
         padding: 164px 85px 257px;
+
+        @include retina {
+                background-image: linear-gradient(0deg,
+                        rgba(0, 0, 0, 0.65),
+                        rgba(0, 0, 0, 0.65)),
+                    url(/src/images/homepage_hero/homepage-hero-bg-desktop-2x.jpg);
+            }
     }
 }
 
@@ -49,13 +70,13 @@
     margin-bottom: 24px;
     transform: translate(10px);
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         font-size: 128px;
         line-height: 1.08;
         margin-bottom: 16px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         margin-bottom: 32px;
     }
 }
@@ -68,13 +89,13 @@
     color: var(--titles-color);
     margin-bottom: 40px;
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         font-size: 20px;
         line-height: 1.2;
         margin-bottom: 56px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         margin-bottom: 64px;
     }
 }
@@ -93,7 +114,7 @@
         margin-bottom: 113px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         font-size: 36px;
         line-height: 1.14;
     }
@@ -127,7 +148,7 @@
         right: 15px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         width: 285px;
         height: 56px;
         padding: 8px 8px 8px 10px;
@@ -138,7 +159,7 @@
         left: 47px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         position: absolute;
         bottom: 64px;
         left: 85px;
@@ -151,7 +172,7 @@
     height: 20px;
     margin-right: 10px;
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         width: 24px;
         height: 24px;
     }
@@ -183,7 +204,7 @@
         right: 319px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         position: absolute;
         bottom: 65px;
         right: 377px;
@@ -197,7 +218,7 @@
         right: 47px;
     }
 
-    @media screen and (min-width: 1280px) {
+        @include desktop {
         position: absolute;
         bottom: 65px;
         right: 85px;
@@ -219,7 +240,7 @@
         left: 47px;
     }
 
-    @media screen and (min-width: 1280px) {
+        @include desktop {
         display: none;
     }
 }
