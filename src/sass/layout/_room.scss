@@ -92,9 +92,13 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     margin-bottom: 32px;
+    width: 315px;
+    height: 20px;
 
     @media screen and (min-width: 1024px){
         margin-bottom: 40px;
+        width: 315px;
+        height: 20px;
     }
 
     @media screen and (min-width: 1280px){
