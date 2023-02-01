@@ -1,6 +1,5 @@
 .room-section{
     padding: 32px 0;
-    // box-sizing: border-box;
 }
 
 .room-section__title{
@@ -23,6 +22,10 @@
     margin-bottom: 16px;
 }
 
+.room-amenities__item{
+    margin-bottom: 32px;
+}
+
 .room-section__text,
 .room-amenities__text{
     font-family: 'Montserrat';
@@ -33,8 +36,8 @@
     letter-spacing: 0.02em;
 }
 
-.room-reserve-btn{
-    display: block;
+.room-reserve-btn {
+    margin-bottom: 20px;
 }
 
 .back-hotel-link{
@@ -52,13 +55,12 @@
     &:hover,
     &:active{
         color: var(--active-color);
+        .back-hotel-icon{
+            fill: var(--active-color);   
+        }
     }
 }
 
 .back-hotel-icon{
-    fill: var(--titles-color);
-    &:hover,
-    &:active {
-    fill: var(--active-color);
-  }
+    fill: var(--secondary-text-color);
 }
