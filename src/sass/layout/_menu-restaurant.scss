@@ -1,5 +1,4 @@
 .menu-restaurant {
-  background-color: var(--even-section-background-color);
   color: var(--subtitles-color);
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -21,12 +20,12 @@
 
 .menu-restaurant__main-tittle {
   font-family: "Times New Roman";
+  text-transform: uppercase;
   font-size: 32px;
   line-height: 1.16;
   margin-bottom: 32px;
   @media screen and (min-width: 1024px) {
     margin-bottom: 40px;
-    text-transform: uppercase;
   }
 }
 
@@ -125,6 +124,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
+  cursor: pointer;
 
   @media screen and (min-width: 1024px) {
     margin-right: 0;

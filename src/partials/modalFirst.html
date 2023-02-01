@@ -1,0 +1,66 @@
+<div class="backdrop is-hidden" data-modal-first>
+  <div class="modal">
+    <button class="modal__button" type="button" data-modal-close-first>
+      <svg class="end" width="24" height="24">
+        <use href="./images/icons-svg.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="form__title">забронювати столик</h2>
+    <form class="form__form" name="contact-form" autocomplete="on">
+      <div class="form__position-first">
+        <div class="form__field">
+          <input
+            class="form__input"
+            id="user-name"
+            type="text"
+            name="user-name"
+            placeholder="Ваше ім’я"
+            required
+          />
+          <label class="form__label" for="user-name"
+            >На кого забронювати столик?</label
+          >
+        </div>
+        <div class="form__field">
+          <input
+            class="form__input"
+            id="user-name"
+            type="text"
+            name="user-name"
+            placeholder="+38 (___) ___-__-__"
+            required
+          />
+          <label class="form__label" for="user-name">Номер телефону</label>
+        </div>
+        <div class="form__field">
+          <select
+            class="form__input textinselect"
+            name="form__numberpeople"
+            id="form__numberpeople-select"
+          >
+            <option value="1">1</option>
+            <option selected value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+          </select>
+          <p class="form__label">Столик на яку кількість осіб?</p>
+        </div>
+
+        <div class="form__field">
+          <input
+            class="form__input textinselect"
+            type="date"
+            value="2022-06-01"
+          />
+          <p class="form__label">На яку дату бронювати?</p>
+        </div>
+      </div>
+      <button data-modal-close-first class="form__button" type="submit">
+        оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>
