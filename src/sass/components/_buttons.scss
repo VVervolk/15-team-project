@@ -33,35 +33,33 @@
 
     width: 258px;
     height: 48px;
-    left: 67px;
-    top: 186px;
     background: rgba(0, 0, 0, 0.4);
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--titles-color);
     border-radius: 25px;
     padding: 14px 35px;
     color: var(--active-color);
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
     &:hover,
     &:focus {
-        background: #FFFFFF;
+        background: var(--titles-color);
         border: 2px solid var(--active-color);
     }
   }
     
     .button-black {
         
-        background: #000000;
-        border: 2px solid #FFFFFF;
+        background: var(--subtitles-color);
+        border: 2px solid var(--titles-color);
         border-radius: 25px;
         padding: 14px 65px;
         color: var(--active-color);
-    
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
-        background: #FFFFFF;
+        background: var(--titles-color);
         border: 2px solid var(--active-color);
     }
   }
@@ -69,93 +67,88 @@
     .button-accept {
         width: 434px;
         height: 65px;
-        left: 73px;
-        top: 653px;
-        background: #000000;
+        text-transform:uppercase;
+        background: var(--subtitles-color);
         border: 1px solid var(--active-color);
         border-radius: 25px;
         padding: 18px 38px;
-        color: #FFFFFF;
-    
+        color: var(--titles-color);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
         background: var(--active-color);
         border: 2px solid var(--active-color);
-        color: #000000;
+        color: var(--subtitles-color);
     }
   }
     
     .button-modal {
         width: 592px;
             height: 64px;
-            left: 64px;
-            top: 843px;
-        
-            background: #000000;
+            text-transform:uppercase;        
+            background: var(--subtitles-color);
             border: 1px solid var(--active-color);
             border-radius: 2px;
-            color: #fff;
+            color: var(--titles-color);
             padding: 18px 117px;
-    
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
         background: var(--active-color);
         border: 1px solid var(--active-color);
-        color: #000000;
+        color: var(--subtitles-color);
     }
   }
     .button-mob {
         width: 384px;
             height: 64px;
-            left: 73px;
-            top: 1046px;
-            background: #000000;
+            text-transform:uppercase;
+            background: var(--subtitles-color);
             border: 1px solid var(--active-color);
             border-radius: 25px;
-            color: #FFFFFF;
+            color: var(--titles-color);
             padding: 20px 43px;
-    
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
         background: var(--active-color);
         border: 1px solid var(--active-color);
-        color: #000000;
+        color: var(--subtitles-color);
     }
   }
     
     .button-mob2 {
         width: 384px;
         height: 64px;
-        left: 73px;
-        top: 1046px;
-        background: #000000;
+        text-transform:uppercase;
+        background: var(--subtitles-color);
         border: 1px solid var(--active-color);
         border-radius: 2px;
-        color: #FFFFFF;
+        color: var(--titles-color);
         padding: 20px 43px;
-    
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
     &:focus {
         background: var(--active-color);
         border: 1px solid var(--active-color);
-        color: #000000;
+        color: var(--subtitles-color);
     }
   }
 
 .button-disabled {
-    font-family: 'Montserrat';
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
 letter-spacing: 0.02em;
 
-color: #C79002;
-
+color: var(--secondary-text-color);
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 &:hover,
@@ -163,4 +156,10 @@ color: #C79002;
    
 color: var(--active-color);
 }
+}
+
+.svg-button-disabled:hover,
+.svg-button-disabled:focus {
+  fill: var(--active-color);
+
 }
