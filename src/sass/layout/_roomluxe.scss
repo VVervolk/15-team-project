@@ -21,6 +21,10 @@
     }
 }
 
+.room-description {
+    display: flex;
+    flex-direction: column;
+}
 
  .room-subtitle {
 
@@ -123,6 +127,7 @@
     //tablet screen
     @media screen and (min-width: 1024px) {
         margin-bottom: 176px;
+        max-width: 439px;
 
         font-weight: 700;
         font-size: 16px;
@@ -131,6 +136,7 @@
     //desktop screen
     @media screen and (min-width: 1280px) {
         margin-bottom: 188px;
+        max-width: 400px;
     }
 }
 
@@ -145,7 +151,12 @@
         content: "";
         top:0;
         right: 0;
-        transform: translate( -16%, -6%);
+        transform: translate( -180px, -33px);
+    }
+
+    @media screen and (min-width: 1024px) {
+        
+        transform: translate( -112px, -32px);
     }
 }
 
@@ -162,17 +173,35 @@
 }
 
 //slider details
+
 .view-overlay {
 
+    margin-bottom: 20px;
     @media screen and (min-width: 1024px) {
         display: flex;
+
     }
 }
 .room-view-thumb {
-    display: flex;
-    gap: 40px;
     
+   display: flex; 
+   flex-direction: column;     
     
+}
+
+
+
+.room-thumb-img {
+
+
+   display: flex;
+   @media screen and (max-width: 414px) {
+   transform: translateX(-117px);
+   }
+    
+}
+.room-view-item:not(:last-child) {
+    margin-right: 40px;
 }
 
 .room-view-img {
@@ -195,11 +224,14 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
 
+
     @media screen and (min-width: 1024px) {
+        
+        
         justify-content: center;
         align-items: flex-end;
+        margin-left: auto;
 
-       margin-left: auto;
     }
 }
 
