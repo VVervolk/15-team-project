@@ -5,7 +5,7 @@
 
     padding-top: 32px;
     padding-bottom: 32px;
-    //background: #fffdee;
+
    
     //tablet screen
     @media screen and (min-width: 1024px) {
@@ -153,7 +153,7 @@
         right: 0;
         transform: translate( -180px, -33px);
     }
-
+     //tablet screen
     @media screen and (min-width: 1024px) {
         
         transform: translate( -112px, -32px);
@@ -166,6 +166,7 @@
     border-radius: 2px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
    
+     //tablet screen
     @media screen and (min-width: 1024px) {
         box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     }
@@ -177,6 +178,8 @@
 .view-overlay {
 
     margin-bottom: 20px;
+
+     //tablet screen
     @media screen and (min-width: 1024px) {
         display: flex;
 
@@ -189,12 +192,11 @@
     
 }
 
-
-
 .room-thumb-img {
 
-
    display: flex;
+
+    //mobile screen
    @media screen and (max-width: 414px) {
    transform: translateX(-117px);
    }
@@ -210,8 +212,6 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
 }
 
-
-
 .room-review {
     
     margin-bottom: 16px;
@@ -224,9 +224,8 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
 
-
+     //tablet screen
     @media screen and (min-width: 1024px) {
-        
         
         justify-content: center;
         align-items: flex-end;
