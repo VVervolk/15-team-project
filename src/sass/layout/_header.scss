@@ -27,6 +27,10 @@
     text-transform: uppercase;
     color: var(--titles-color);
 
+    @media screen and (min-width: 380px) {
+            justify-content: flex-start;
+        }
+
     @media screen and (min-width: 1024px) {
         font-size: 40px;
         line-height: 43px;
