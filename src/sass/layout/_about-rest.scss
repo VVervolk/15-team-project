@@ -22,6 +22,7 @@
 .about-rest-interior-img {
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  position: relative;
   @media screen and (max-width: 1023px) {
     align-self: end;
   }
@@ -56,6 +57,7 @@
   line-height: 1.075;
   letter-spacing: 0.3em;
   margin-bottom: 12px;
+  text-transform: uppercase;
   color: var(--section-logo-text-color);
   @media screen and (min-width: 414px) {
     font-size: 40px;
@@ -67,6 +69,7 @@
 }
 
 .about-rest-descr {
+  font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -134,4 +137,9 @@
   @media screen and (min-width: 1280px) {
     margin-top: -75px;
   }
+}
+
+.about-rest-images {
+  display: flex;
+  flex-direction: column;
 }
