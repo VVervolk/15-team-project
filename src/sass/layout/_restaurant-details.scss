@@ -153,82 +153,115 @@
 }
 
 .swiper-container {
-  padding-left: 14px;
-  margin-top: 40px;
-
-  @media screen and (min-width: 1024px) {
-    padding-left: 231px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-left: 257px;
-  }
-}
-
-.minislider {
-  // для кожного тут свої позначення
-  // -------------------------------
-  //margin-top: 32px;
-  //@media screen and (min-width: 1024px) {
-  //  align-self: flex-end;
-  //  margin-top: -32px;
-  //}
-  //@media screen and (min-width: 1280px) {
-  //  margin-top: -127px;
-  //}
-  // -------------------------------
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  overflow: hidden;
+  max-height: 270px;
+  min-width: 414px;
   padding-left: 14px;
   margin-top: 40px;
 
   @media screen and (min-width: 1024px) {
     padding-left: 270px;
+    flex-wrap: nowrap;
+    gap: 34px;
   }
   @media screen and (min-width: 1280px) {
     padding-left: 270px;
-  }
-
-  .swiper {
-    // тінь
-    margin-top: -60px;
-    padding-top: 60px;
-    @media screen and (min-width: 414px) {
-      margin-right: -15px;
-    }
-    @media screen and (min-width: 1024px) {
-      margin-right: -20px;
-      margin-left: -20px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-  .swiper-wrapper {
-    @media screen and (min-width: 1024px) {
-      max-width: 428px;
-    }
-    @media screen and (min-width: 1280px) {
-      max-width: 548px;
-    }
-  }
-  // спільне
-  .swiper-slide {
-    max-width: 274px !important;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    & .swiper-inner > img {
-      object-fit: contain;
-    }
-    @media screen and (max-width: 1023px) {
-      &.swiper-slide-next,
-      &.swiper-slide-prev {
-        opacity: 0.5;
-      }
-    }
-    @media screen and (min-width: 1024px) {
-      max-width: 270px !important;
-    }
-    @media screen and (min-width: 1280px) {
-      max-width: 320px !important;
-    }
+    flex-wrap: nowrap;
+    gap: 86px;
   }
 }
+
+.swiper-arrows {
+  padding-left: 14px;
+  margin-top: 16px;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 270px;
+    margin-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 270px;
+    margin-top: 24px;
+  }
+}
+
+.swiper-btn {
+  background-color: transparent;
+  border-color: transparent;
+  fill: #ffffff;
+}
+
+// .restslider {
+//   // для кожного тут свої позначення
+//   // -------------------------------
+//   //margin-top: 32px;
+//   //@media screen and (min-width: 1024px) {
+//   //  align-self: flex-end;
+//   //  margin-top: -32px;
+//   //}
+//   //@media screen and (min-width: 1280px) {
+//   //  margin-top: -127px;
+//   //}
+//   // -------------------------------
+//   padding-left: 14px;
+//   margin-top: 40px;
+
+//   @media screen and (min-width: 1024px) {
+//     padding-left: 270px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     padding-left: 270px;
+//   }
+
+//   .swiper {
+//     // тінь
+//     //margin-top: -60px;
+//     //padding-top: 60px;
+//     @media screen and (min-width: 414px) {
+//       //margin-right: -15px;
+//     }
+//     @media screen and (min-width: 1024px) {
+//       //margin-right: -20px;
+//       //margin-left: -20px;
+//       //padding-left: 20px;
+//       //padding-right: 20px;
+//     }
+//   }
+//   .swiper-wrapper {
+//     @media screen and (min-width: 1024px) {
+//       max-width: 662px;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       max-width: 874px;
+//     }
+//   }
+//   // спільне
+//   .swiper-slide {
+//     max-width: 270px !important;
+//     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+//     & .swiper-inner > img {
+//       object-fit: contain;
+//     }
+//     @media screen and (max-width: 1023px) {
+//       &.swiper-slide-next,
+//       &.swiper-slide-prev {
+//         opacity: 0.5;
+//       }
+//     }
+//     @media screen and (min-width: 1024px) {
+//       max-width: 270px !important;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       max-width: 356px !important;
+//       &.swiper-slide-active {
+//         width: 162px !important;
+//       }
+//     }
+//   }
+// }
 
 .modal-button {
   font-family: 'Montserrat';
