@@ -1,0 +1,227 @@
+.room-hero {
+  width: 100%;
+  position: relative;
+  .swiper {
+    max-height: 740px;
+    @media screen and (min-width: 1024px) {
+      max-height: 720px;
+    }
+  }
+  .swiper-btns {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    top: 350px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
+    @media screen and (min-width: 1024px) {
+      padding-left: calc((100vw - 1024px + 94px) / 2);
+      padding-right: calc((100vw - 1024px + 94px) / 2);
+      top: 341px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-left: calc((100vw - 1280px + 170px) / 2);
+      padding-right: calc((100vw - 1280px + 170px) / 2);
+      top: 412px;
+    }
+  }
+  .swiper-btn > svg {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.65);
+  }
+  .swiper-button-prev {
+    margin-right: 0;
+  }
+}
+
+.room-hero::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 143px;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 2;
+  @media screen and (min-width: 1024px) {
+    height: 116px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 147px;
+  }
+}
+
+.room-hero_title {
+  font-family: 'Times New Roman', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: var(--titles-color);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  max-width: 325px;
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+  & > span {
+    text-transform: lowercase;
+  }
+}
+
+.room-hero_descr {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+  max-width: 325px;
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+
+.room-hero_text {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 16px;
+  }
+}
+
+.room-hero_roomtype {
+  position: absolute;
+  bottom: 18px;
+  z-index: 2;
+  @media screen and (min-width: 1024px) {
+    bottom: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100vw - 170px - (100vw - 1280px));
+    justify-content: space-between;
+  }
+}
+
+.room-hero_info {
+  margin-right: 72px;
+  display: inline-flex;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-right: 0;
+    gap: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.room-hero-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.room-hero-icon > a > svg {
+  fill: var(--half-transparent-icons);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:active {
+    fill: var(--subtitles-color);
+  }
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.room-hero_button {
+  // background-color: rgba(0, 0, 0, 0.4);
+  // border: 2px solid #ffffff;
+  // border-radius: 25px;
+  // padding: 13px 34px;
+  // color: var(--active-color);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.25;
+  // letter-spacing: 0.02em;
+  @media screen and (max-width: 348px) {
+    max-width: 232px;
+    padding: 10px;
+  }
+  @media screen and (max-width: 1023px) {
+    transform: translateY(50%);
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    position: absolute;
+    bottom: 42px;
+    right: -80%;
+  }
+}
+
+.room-hero_address {
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  width: 210px;
+  padding: 8px 6px;
+  color: var(--address-color);
+  & > svg {
+    fill: var(--active-color);
+    flex-shrink: 0;
+    @media screen and (min-width: 1024px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &--top {
+    position: absolute;
+    top: 8%;
+    right: calc((100vw - 414px + 30px) / 2);
+    z-index: 2;
+    @media screen and (max-width: 384px) {
+      top: 14%;
+      right: 5%;
+    }
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+  &--bottom {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 8px;
+    gap: 10px;
+    width: 285px;
+    font-size: 16px;
+  }
+}
