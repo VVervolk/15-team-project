@@ -146,12 +146,15 @@
 
     //tablet screen
     @media screen and (min-width: 1024px) {
-        display: flex;
-        position: absolute;
-        content: "";
-        top:0;
-        right: 0;
-        transform: translate( -180px, -33px);
+           display: flex;
+           margin-top: -33px;
+     //   position: absolute;
+     //   content: "";
+   //     top:0;
+    //    right: 0;
+   //     transform: translate( -180px, -33px);
+
+
     }
      //tablet screen
     @media screen and (min-width: 1024px) {
