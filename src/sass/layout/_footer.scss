@@ -1,0 +1,131 @@
+<<<<<<< HEAD
+=======
+.page-footer {
+  padding: 40px 0;
+  background-color: var(--footer-color);
+
+  @media (min-width: 1024px) {
+    padding: 80px 0;
+  }
+}
+
+.page-footer__flex-box {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 413px) {
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: space-around;
+  }
+}
+
+.page-footer__logo {
+  margin-left: 45px;
+  align-self: center;
+
+  color: var(--active-color);
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+
+  @media (max-width: 413px) {
+    margin-left: 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: 0;
+
+    font-size: 64px;
+    line-height: 1.08;
+  }
+}
+
+.page-footer__pos {
+  margin-right: 15px;
+
+  @media (max-width: 413px) {
+    margin-right: 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 0;
+
+    display: flex;
+    gap: 137px;
+  }
+  @media (min-width: 1280px) {
+    gap: 200px;
+  }
+}
+
+.page-footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__link {
+  color: var(--active-color);
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  @media (min-width: 1024px) {
+    gap: 12px;
+    flex-direction: column;
+  }
+}
+
+.page-footer__social {
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    width: 144px;
+
+    border: 0.5px solid var(--active-color);
+    border-radius: 2px;
+  }
+}
+
+.page-footer__social-name {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+
+    color: var(--active-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+}
+
+.page-footer__icon {
+  width: 24px;
+  height: 24px;
+
+  fill: var(--active-color);
+}
+>>>>>>> main
