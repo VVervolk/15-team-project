@@ -1,104 +1,230 @@
-.hero {
+
+.section-hero {
+    width: 100vw;
+}
+
+.hero-homepage {
     position: relative;
-    padding: 181px 0 20px;
-    background-image: linear-gradient(to right,
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.65)),
-    url(/src/images/homepage_hero/homepage-hero-bg-mob.jpg);
+    padding: 181px 15px 102px 15px;
 
-    &__location {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.25;
-        letter-spacing: 0.01em;
-        color: #E5E5E5;
+    text-align: center;
 
-        width: 210px;
-        height: 47px;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 64px;
-        right: 15px;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(/src/images/homepage_hero/homepage-hero-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1280px;
+    margin: 0 auto;
 
-        border: 1px solid rgba(243, 198, 83, 0.7);
-        border-radius: 2px;
-
-        @media screen and (min-width: 1024px) {
-            bottom: 64px;
-            left: 47px;
-        }
+    @media screen and (min-width: 1024px) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/homepage_hero/homepage-hero-bg-tablet.jpg);
+        padding: 188px 47px 257px;
     }
 
-    &__container {
-        text-align: center;
+    @media screen and (min-width: 1280px) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/homepage_hero/homepage-hero-bg-desktop.jpg);
+        padding: 164px 85px 257px;
     }
 }
 
-.hero__icon-location {
-    margin-left: 6px;
-    margin-right: 8px;
-}
-
-.hero__title-logo {
-    width: 303px;
+.hero__tittle {
     font-family: 'Film P3';
+    font-size: 80px;
     font-style: normal;
     font-weight: 700;
-    font-size: 96px;
-    line-height: 103px;
+    line-height: 1.08;
     letter-spacing: 0.3em;
-    color: var(--titles-color);
-    margin: 0 auto 24px;
+    text-transform: uppercase;
     text-align: center;
+    color: var(--titles-color);
+    margin-bottom: 24px;
+    transform: translate(10px);
+
+    @media screen and (min-width: 1024px) {
+        font-size: 128px;
+        line-height: 1.08;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+    }
 }
 
-.hero__text {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-    font-size: 16px;
+.hero__name {
+    font-size: 14px;
     line-height: 1.25;
+    font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--titles-color);
     margin-bottom: 40px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 56px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 64px;
+    }
 }
 
-.hero__title {
-    font-family: Times New Roman;
+.hero__slogan {
+    font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 1.16;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
     color: var(--titles-color);
-    margin-bottom: 113px;
+
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 113px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 36px;
+        line-height: 1.14;
+    }
+}
+
+.hero__location {
+    display: flex;
+    align-items: center;
+
+    width: 210px;
+    height: 47px;
+    text-align: left;
+
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    border: 1px solid;
+    border-color: var(--active-color);
+    border-radius: 2px;
+
+    color: var(--titles-color);
+    fill: var(--active-color);
+
+    padding: 8px 3px 9px 6px;
+
+    @media screen and (max-width: 1023px) {
+        position: absolute;
+        top: 70px;
+        right: 15px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 285px;
+        height: 56px;
+        padding: 8px 8px 8px 10px;
+        font-size: 16px;
+        line-height: 1.25;
+        position: absolute;
+        bottom: 64px;
+        left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: 64px;
+        left: 85px;
+    }
+}
+
+.hero__location-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+
+    @media screen and (min-width: 1024px) {
+        width: 24px;
+        height: 24px;
+    }
+
 }
 
 .hero__btn {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
     color: var(--active-color);
-
-    width: 236px;
-    height: 48px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid #FFFFFF;
+    border: 2px solid;
+    border-color: var(--titles-color);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .4);
     border-radius: 25px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
 }
 
-.hero__btn:not(:last-child) {
-    margin-bottom: 24px;
+.hero__btn--first {
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        position: absolute;
+        bottom: 64px;
+        right: 319px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: 65px;
+        right: 377px;
+    }
 }
 
-.hero__icons {
-    margin-top: 60px;
+.hero__btn--second {
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        position: absolute;
+        bottom: 64px;
+        right: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: 65px;
+        right: 85px;
+    }
 }
 
-.hero__icon-social:not(:last-child) {
-    margin-right: 21px;
+.social-list-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        position: absolute;
+        bottom: 15px;
+        left: 47px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.social-list-nav__icon {
+    display: block;
+    fill: var(--active-color);
 }
