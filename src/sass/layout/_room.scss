@@ -26,7 +26,30 @@
     margin-bottom: 32px;
 }
 
-.room-section__text,
+.room-amenities__card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    @media screen and (min-width: 1024px){
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    @media screen and (min-width: 1024px){
+        gap: 159px;
+    }
+}
+
+.room-section__text{
+    font-family: 'Montserrat';
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+}
 .room-amenities__text{
     font-family: 'Montserrat';
     color: var(--main-text-color);
@@ -43,6 +66,7 @@
 .back-hotel-link{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     font-family: 'Montserrat';
     color: var(--secondary-text-color);
