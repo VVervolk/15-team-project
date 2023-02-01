@@ -10,6 +10,11 @@
 .page-footer__flex-box {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 413px) {
+    justify-content: space-around;
+  }
+
   @media (min-width: 1024px) {
     justify-content: space-around;
   }
@@ -28,6 +33,10 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
 
+  @media (max-width: 413px) {
+    margin-left: 0;
+  }
+
   @media (min-width: 1024px) {
     margin-left: 0;
 
@@ -38,6 +47,11 @@
 
 .page-footer__pos {
   margin-right: 15px;
+
+  @media (max-width: 413px) {
+    margin-right: 0;
+  }
+
   @media (min-width: 1024px) {
     margin-right: 0;
 
