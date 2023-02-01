@@ -1,0 +1,166 @@
+// buttons for mini-slider
+.swiper-btns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (min-width: 1024px) {
+      margin-top: 32px;
+    }
+    @media screen and (min-width: 1280px){
+      margin-top: 36px;
+    }
+  }
+  .swiper-btn {
+    background-color: inherit;
+    border: transparent;
+    padding: 0;
+    &:hover,
+    &:active {
+      fill: var(--active-color);
+    }
+    &:disabled {
+      fill: var(--titles-color);
+    }
+  }
+  .swiper-button-prev {
+    margin-right: 32px;
+  }
+
+
+  
+
+  .button {
+
+    width: 258px;
+    height: 48px;
+    left: 67px;
+    top: 186px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    padding: 14px 35px;
+    color: var(--active-color);
+    
+    
+    
+    &:hover,
+    &:focus {
+        background: #FFFFFF;
+        border: 2px solid var(--active-color);
+    }
+  }
+    
+    .button-black {
+        
+        background: #000000;
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+        padding: 14px 65px;
+        color: var(--active-color);
+    
+    
+    &:hover,
+    &:focus {
+        background: #FFFFFF;
+        border: 2px solid var(--active-color);
+    }
+  }
+    
+    .button-accept {
+        width: 434px;
+        height: 65px;
+        left: 73px;
+        top: 653px;
+        background: #000000;
+        border: 1px solid var(--active-color);
+        border-radius: 25px;
+        padding: 18px 38px;
+        color: #FFFFFF;
+    
+    
+    &:hover,
+    &:focus {
+        background: var(--active-color);
+        border: 2px solid var(--active-color);
+        color: #000000;
+    }
+  }
+    
+    .button-modal {
+        width: 592px;
+            height: 64px;
+            left: 64px;
+            top: 843px;
+        
+            background: #000000;
+            border: 1px solid var(--active-color);
+            border-radius: 2px;
+            color: #fff;
+            padding: 18px 117px;
+    
+    
+    &:hover,
+    &:focus {
+        background: var(--active-color);
+        border: 1px solid var(--active-color);
+        color: #000000;
+    }
+  }
+    .button-mob {
+        width: 384px;
+            height: 64px;
+            left: 73px;
+            top: 1046px;
+            background: #000000;
+            border: 1px solid var(--active-color);
+            border-radius: 25px;
+            color: #FFFFFF;
+            padding: 20px 43px;
+    
+    
+    &:hover,
+    &:focus {
+        background: var(--active-color);
+        border: 1px solid var(--active-color);
+        color: #000000;
+    }
+  }
+    
+    .button-mob2 {
+        width: 384px;
+        height: 64px;
+        left: 73px;
+        top: 1046px;
+        background: #000000;
+        border: 1px solid var(--active-color);
+        border-radius: 2px;
+        color: #FFFFFF;
+        padding: 20px 43px;
+    
+    
+    &:hover,
+    &:focus {
+        background: var(--active-color);
+        border: 1px solid var(--active-color);
+        color: #000000;
+    }
+  }
+
+.button-disabled {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.02em;
+
+color: #C79002;
+
+
+
+&:hover,
+&:focus {
+   
+color: var(--active-color);
+}
+}

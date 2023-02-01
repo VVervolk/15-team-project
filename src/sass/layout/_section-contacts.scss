@@ -55,8 +55,9 @@
 
 .contacts-list__contact{
   display: flex;
- align-items: center;
+  align-items: center;
 
+  
   &:not(:last-child) {
       margin-bottom: 16px;
     }
@@ -107,6 +108,11 @@
     margin-right: 12px;
   }
 }
+@media screen and (min-width: 313px) and (max-width: 414px) {
+  .contact__tel--alignment {
+    margin-left: 33px;
+  }
+}
 .contact__link--adress{
   padding: 8px 33px 7px 10px;
   font-size: 16px;
@@ -123,6 +129,7 @@
   height: 24px;
   margin-right: 9px;
   flex-shrink: 0;
+  fill: var(--secondary-text-color);
 }
 
 @media screen and (max-width: 1023px) {
@@ -132,13 +139,27 @@
   
     .contact__link--hotel {
       margin-left: 57px;
+      display: inline-flex;
+      justify-content: start;
+      align-items: center;
+      @media screen and (min-width: 314px) {
+        flex-wrap: wrap;
+      }
     }
-  
+    
     .contact__link--adress {
       margin-left: 121px;
     }
 }
+.contact--active {
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color);
+  }
 
+}
 
 .map{
   width: 100%;
