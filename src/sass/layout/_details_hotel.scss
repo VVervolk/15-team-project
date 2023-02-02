@@ -42,9 +42,11 @@
 .details-hotel__container {
     padding-top: 24px;
     padding-bottom: 40px;
+    height: 735px;
     
     @include tablet {
         padding-top: 48px;
+        height: 620px;
     }
     
     @include desktop {
@@ -84,9 +86,13 @@
     font-size: 20px;
     line-height: calc(24 / 20);
     letter-spacing: 0.02em;
-    margin-left: 186px;
+    margin-left: 142px;
     margin-bottom: 20px;
     color: var(--titles-color);
+
+    @include mobile {
+        margin-left: 186px;
+    }
   
     @include tablet {
         font-size: 24px;
@@ -152,14 +158,16 @@
 
 .details-hotel-list__item:nth-child(1) {
     width: 274px;
-    width: 270px;
-    transform: translateX(-80%);
+    height: 270px;
     border-radius: 2px;
+    margin-right: 25px;
+    transform: translateX(-80%);
 
     @include tablet {
         width: 270px;
+        height: 270px;
         transform: translateX(0);
-        background: #DADADA;
+        background-color: #DADADA;
     }
 
     @include desktop {
@@ -170,15 +178,16 @@
 .details-hotel-list__item:nth-child(2) {
     width: 274px;
     height: 270px;
-    transform: translateX(-80%);
     margin-right: 20px;
     border-radius: 2px;
+    transform: translateX(-80%);
     
     @include tablet {
         width: 162px;
-        transform: translateX(0);
+        height: 270px;
         margin-right: 34px;
-        background: #DADADA;
+        background-color: #DADADA;
+        transform: translateX(0);
     }
 
     @include desktop {
@@ -197,7 +206,7 @@
         height: 270px;
         margin-right: 34px;
 
-        background: #DADADA;
+        background-color: #DADADA;
         border-radius: 2px;
     }
 
