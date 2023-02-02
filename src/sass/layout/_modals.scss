@@ -40,6 +40,11 @@
   text-transform: uppercase;
   margin-bottom: 40px;
   text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+    line-height: 1.15;
+  }
 }
 .form__input {
   width: 100%;
@@ -63,6 +68,10 @@
   line-height: 1.15;
   letter-spacing: 0.05em;
   color: #808080;
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .textinselect--space {
@@ -175,4 +184,17 @@
     margin-right: 0;
     margin-left: auto;
   }
+}
+.js-inputmask {
+  font-family: "Times New Roman";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #808080;
+}
+
+.select {
+  appearance: none;
 }
