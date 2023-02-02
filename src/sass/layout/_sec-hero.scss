@@ -7,6 +7,12 @@
     background-position: center;
     background-size: cover;
 
+    @include retina {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/heroes/homepage-hero-bg-mob-2x.jpg);
+    }
 
     @include tablet {
         background-image: linear-gradient(0deg,
@@ -14,6 +20,12 @@
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/heroes/homepage-hero-bg-tab.jpg);
 
+        @include retina {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/heroes/homepage-hero-bg-tab-2x.jpg);
+        }
     }
 
     @include desktop {
@@ -22,6 +34,12 @@
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/heroes/homepage-hero-bg-desktop.jpg);
 
+        @include retina {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/heroes/hotel-hero-bg-desktop-2x.jpg);
+        }
     }
 }
 
@@ -130,7 +148,6 @@
     @include desktop {
         padding: 164px 85px 257px;
     }
-
 }
 
 .hero__tittle {
@@ -146,13 +163,13 @@
     margin-bottom: 24px;
     transform: translate(10px);
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         font-size: 128px;
         line-height: 1.08;
         margin-bottom: 16px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         margin-bottom: 32px;
     }
 }
@@ -165,13 +182,13 @@
     color: var(--titles-color);
     margin-bottom: 40px;
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         font-size: 20px;
         line-height: 1.2;
         margin-bottom: 56px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         margin-bottom: 64px;
     }
 }
