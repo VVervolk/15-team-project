@@ -147,7 +147,7 @@
 
     padding: 8px 3px 9px 6px;
 
-    transition: color .25s cubic-bezier(.4, 0, .2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -203,14 +203,13 @@
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.01em;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
         background: var(--titles-color);
             border: 2px solid var(--active-color);
-            border-radius: 25px;
-            letter-spacing: 0.02em;
-            color: var(--active-color);
     }
 }
 
@@ -269,4 +268,11 @@
 .social-list-nav__icon {
     display: block;
     fill: var(--active-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            fill: var(--secondary-text-color);
+        }
 }
