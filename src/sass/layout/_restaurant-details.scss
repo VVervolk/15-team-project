@@ -153,11 +153,11 @@
 }
 
 .swiper-container {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  // align-items: flex-start;
   overflow: hidden;
-  max-height: 270px;
+  height: 270px;
   min-width: 414px;
   padding-left: 14px;
   margin-top: 40px;
