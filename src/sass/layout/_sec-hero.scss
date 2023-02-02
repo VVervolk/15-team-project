@@ -1,14 +1,4 @@
-
-.section-hero {
-    width: 100vw;
-}
-
 .hero-homepage {
-    position: relative;
-    padding: 181px 15px 102px 15px;
-
-    text-align: center;
-
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.65)),
@@ -16,24 +6,131 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1280px;
-    margin: 0 auto;
 
-    @media screen and (min-width: 1024px) {
+
+    @include tablet {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/heroes/homepage-hero-bg-tab.jpg);
-        padding: 188px 47px 257px;
+
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
             url(/src/images/heroes/homepage-hero-bg-desktop.jpg);
+
+    }
+}
+
+.hero-rest {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(/src/images/heroes/rest-hero-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include retina {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/heroes/rest-hero-bg-mob-2x.jpg);
+    }
+
+    @include tablet {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/heroes/rest-hero-bg-tab.jpg);
+
+        @include retina {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/heroes/rest-hero-bg-tab-2x.jpg);
+        }
+    }
+
+    @include desktop {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/heroes/rest-hero-bg-desktop.jpg);
+
+        @include retina {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/heroes/rest-hero-bg-desktop-2x.jpg);
+        }
+    }
+}
+
+.hero-hotel {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        url(/src/images/heroes/hotel-hero-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    @include retina {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/heroes/hotel-hero-bg-mob-2x.jpg);
+    }
+
+    @include tablet {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/heroes/hotel-hero-bg-tab.jpg);
+
+        @include retina {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/heroes/hotel-hero-bg-tab-2x.jpg);
+        }
+    }
+
+    @include desktop {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(/src/images/heroes/hotel-hero-bg-desktop.jpg);
+
+        @include retina {
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)),
+                url(/src/images/heroes/hotel-hero-bg-desktop-2x.jpg);
+        }
+    }
+}
+
+.hero {
+    width: 100vw;
+    position: relative;
+    padding: 181px 15px 102px 15px;
+
+    text-align: center;
+
+    @include tablet {
+        padding: 188px 47px 257px;
+    }
+
+    @include desktop {
         padding: 164px 85px 257px;
     }
+
 }
 
 .hero__tittle {
@@ -93,7 +190,7 @@
         margin-bottom: 113px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         font-size: 36px;
         line-height: 1.14;
     }
@@ -121,13 +218,20 @@
 
     padding: 8px 3px 9px 6px;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--active-color);
+    }
+
     @media screen and (max-width: 1023px) {
         position: absolute;
         top: 70px;
         right: 15px;
     }
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         width: 285px;
         height: 56px;
         padding: 8px 8px 8px 10px;
@@ -138,7 +242,7 @@
         left: 47px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         position: absolute;
         bottom: 64px;
         left: 85px;
@@ -151,7 +255,7 @@
     height: 20px;
     margin-right: 10px;
 
-    @media screen and (min-width: 1024px) {
+    @include tablet {
         width: 24px;
         height: 24px;
     }
@@ -163,13 +267,22 @@
     border: 2px solid;
     border-color: var(--titles-color);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 25px;
     padding: 14px 24px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.01em;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: var(--titles-color);
+        border: 2px solid var(--active-color);
+    }
 }
 
 .hero__btn--first {
@@ -183,7 +296,7 @@
         right: 319px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         position: absolute;
         bottom: 65px;
         right: 377px;
@@ -197,7 +310,7 @@
         right: 47px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         position: absolute;
         bottom: 65px;
         right: 85px;
@@ -219,7 +332,7 @@
         left: 47px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @include desktop {
         display: none;
     }
 }
@@ -227,4 +340,11 @@
 .social-list-nav__icon {
     display: block;
     fill: var(--active-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--secondary-text-color);
+    }
 }
