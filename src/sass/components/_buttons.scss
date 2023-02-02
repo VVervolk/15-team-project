@@ -239,7 +239,11 @@
   }
 }
 
-.svg-button-disabled:hover,
-.svg-button-disabled:focus {
+.svg-button-disabled {
+fill: var(--titles-color);
+
+&:hover,
+&:focus {
   fill: var(--active-color);
+}
 }
