@@ -1,13 +1,11 @@
-@import "./common";
-@import "./abstracts/backdrop";
-@import "./abstracts/container";
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@import './common';
+@import './abstracts/backdrop';
+@import './abstracts/container';
+@import './abstracts/variables';
+@import './abstracts/mixins';
 
 @import './base/fonts';
 @import './base/reset-basis';
-@import './components/minislider';
-@import './components/buttons';
 
 // Structure
 @import './layout/header';
@@ -20,5 +18,6 @@
 @import './layout/about-our-hotel';
 @import './layout/section-contacts';
 @import './layout/menu-restaurant';
-@import './layout/footer';
 @import './layout/three-room';
+@import './layout/restaurant-details';
+@import './layout/footer';
