@@ -39,8 +39,10 @@
     justify-content: flex-end;
     align-items: center;
 
-    @media screen and (min-width: 380px) {
-        justify-content: flex-start;
+    @media screen and (max-width: 413px) {
+        justify-content: right;
+        flex-wrap: wrap;
+        width: 120px;
     }
 
     @media screen and (min-width: 1024px) {
