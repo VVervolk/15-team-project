@@ -144,6 +144,8 @@
 
 .room-overlay {
 
+   
+
     //tablet screen
     @media screen and (min-width: 1024px) {
         display: flex;
@@ -161,10 +163,13 @@
 }
  
 .room-main {
-    margin-left: 140px;
+    margin-left: auto;
     margin-bottom: 32px;
+    
     border-radius: 2px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+   
     //tablet screen
     @media screen and (min-width: 1024px) {
         
@@ -189,7 +194,7 @@
 
 .view-overlay {
 
-    margin-bottom: 20px;
+    
     //tablet screen
     @media screen and (min-width: 1024px) {
         display: flex;
@@ -247,7 +252,7 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
        // justify-content: center;
         align-items: flex-end;
         margin-left: auto;
-        transform: translateY(25%);
+        transform: translateY(15%);
     }
 }
 
@@ -256,15 +261,10 @@ box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     margin-bottom: 16px;
     
     
-    width: 236px;
-    height: 48px;
+    padding: 14px 65px;
     text-align: center;
-    font-size: 16px;
-    color: var(--active-color);
-    background: #000000;;
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
-    padding: 14px 35px;
+
+   
    
 
 &:hover,
