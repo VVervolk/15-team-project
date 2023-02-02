@@ -86,7 +86,7 @@
     
         @media screen and (min-width: 1280px) {
             margin-top: 72px;
-            margin-right: 57px;
+            margin-left: 616px;
         }
     }
 
@@ -108,7 +108,7 @@
         }
     
         @media screen and (min-width: 1280px) {
-            margin: 24px 100px 0 666px;
+            margin: 24px 100px 0 616px;
         }
     }
 
@@ -391,7 +391,7 @@
     border: none;
     outline: none;
     padding: 0;
-    fill: #FFFFFF;
+    fill: #000000;
     transition: fill .25s cubic-bezier(.4, 0, .2, 1);
     cursor: pointer;
 
