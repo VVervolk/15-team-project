@@ -4,10 +4,11 @@
     &__container {
         display: flex;
         flex-direction: column;
-        //outline: 1px solid green;
+        overflow: hidden;
     
         @media screen and (min-width: 1024px) {
             position: relative;
+            overflow: inherit;
         }
     }
 
@@ -134,14 +135,14 @@
         margin-top: 20px;
     
     @media screen and (min-width: 1024px) {
-        margin-top: 210px;
+        margin-top: -247px;
         margin-left: 0;
-        margin-bottom: 145px;
+        margin-bottom: 170px;
     }
     
     @media screen and (min-width: 1280px) {
-        margin-top: 260px;
-        margin-bottom: 182px;
+        margin-top: -285px;
+        margin-bottom: 220px;
         }
     }
 
@@ -163,6 +164,7 @@
         width: 236px;
         outline: none;
         cursor: pointer;
+        transition: 250ms cubic-bezier(.4, 0, .2, 1);
     
         &:hover,
         &:focus {
@@ -187,9 +189,10 @@
         justify-content: center;
         text-align: center;
         padding: 14px 37px;
-        width: 236px;
+        //width: 236px;
         outline: none;
         cursor: pointer;
+        transition: 250ms cubic-bezier(.4, 0, .2, 1);
     
         &:hover,
         &:focus {
@@ -328,31 +331,75 @@
     }
 }*/
 
-/*.three-room__slider-container {
+.three-room__slider-container {
     display: flex;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: auto;
+        margin-top: 169px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 188px;
+    }
 }
 
+.three-room__slider-list {
+    display: flex;
+    gap: 16px;
 
+    @media screen and (min-width: 1024px) {
+        gap: 40px;
+    }
+}
 
 .three-room__slider-img {
     margin-top: 32px;
-    //margin-left: 130px;
+    margin-left: 130px;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 0;
+    }
 }
 
-.three-room__slider-img:first-child {
+/*.three-room__slider-img:first-child {
     margin-left: 130px;
-}
-
-
+}*/
 
 .three-room__slider {
     display: flex;
     gap: 32px;
     margin-top: 20px;
     margin-left: auto;
-}*/
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 32px;
+        margin-right: 331px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 40px;
+        margin-right: 450px;
+    }
+}
+
+.three-room__slider-arrow {
+    margin-top: 20px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+    fill: #FFFFFF;
+    transition: fill .25s cubic-bezier(.4, 0, .2, 1);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: var(--active-color);
+    }
+}
 
 /*.three-room__info {
     margin: auto;
