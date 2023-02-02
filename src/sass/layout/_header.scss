@@ -40,8 +40,7 @@
     align-items: center;
 
     @media screen and (max-width: 413px) {
-        justify-content: right;
-        flex-wrap: wrap;
+        justify-content: space-between;
         width: 120px;
     }
 
@@ -60,6 +59,12 @@
     line-height: 20px;
     letter-spacing: 0.02em;
     color: var(--active-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            color: var(--secondary-text-color);
+        }
 
     @media screen and (min-width: 1024px) {
         font-size: 20px;
@@ -87,6 +92,8 @@
     margin-left: 6px;
     padding: 0;
 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 1024px) {
         border-color: rgba(243, 198, 83, .7);
         margin-left: 32px;
@@ -96,7 +103,7 @@
 
 .nav__item:nth-child(3) {
     margin-left: 20px;
-
+    
     @media screen and (min-width: 1024px) {
         margin-left: 32px;
     }
@@ -108,6 +115,12 @@
     font-size: 14px;
     line-height: 1.2;
     display: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            color: rgba(243, 198, 83, .7);
+        }
 
     @media screen and (min-width:1024px) {
         display: block;
@@ -125,4 +138,10 @@
 
 .social__icon {
     fill: var(--active-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--secondary-text-color);
+    }
 }
