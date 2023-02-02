@@ -5,11 +5,11 @@
     modalFirst: document.querySelector('[data-modal-first]'),
   };
 
-  refs.openModalBtnFirst.addEventListener('click', toggleModalFirst);
-  refs.closeModalBtnFirst.addEventListener('click', toggleModalFirst);
+  refs.openModalBtnFirst?.addEventListener('click', toggleModalFirst);
+  refs.closeModalBtnFirst?.addEventListener('click', toggleModalFirst);
 
   function toggleModalFirst() {
-    refs.modalFirst.classList.toggle('is-hidden');
+    refs.modalFirst?.classList?.toggle('is-hidden');
   }
 })();
 
@@ -20,11 +20,11 @@
     modalSecond: document.querySelector('[data-modal-second]'),
   };
 
-  refs.openModalBtnSecond.addEventListener('click', toggleModalSecond);
-  refs.closeModalBtnSecond.addEventListener('click', toggleModalSecond);
+  refs.openModalBtnSecond?.addEventListener('click', toggleModalSecond);
+  refs.closeModalBtnSecond?.addEventListener('click', toggleModalSecond);
 
   function toggleModalSecond() {
-    refs.modalSecond.classList.toggle('is-hidden');
+    refs.modalSecond?.classList?.toggle('is-hidden');
   }
 })();
 
@@ -35,10 +35,10 @@
     modalThird: document.querySelector('[data-modal-third]'),
   };
 
-  refs.openModalBtnThird.addEventListener('click', toggleModalThird);
-  refs.closeModalBtnThird.addEventListener('click', toggleModalThird);
+  refs.openModalBtnThird?.addEventListener('click', toggleModalThird);
+  refs.closeModalBtnThird?.addEventListener('click', toggleModalThird);
 
   function toggleModalThird() {
-    refs.modalThird.classList.toggle('is-hidden');
+    refs.modalThird?.classList?.toggle('is-hidden');
   }
 })();
