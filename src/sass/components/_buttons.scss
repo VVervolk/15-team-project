@@ -1,203 +1,232 @@
 // buttons for mini-slider
 .swiper-btns {
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-    @media screen and (min-width: 1024px) {
-      margin-top: 32px;
-    }
-    @media screen and (min-width: 1280px){
-      margin-top: 36px;
-    }
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (min-width: 1024px) {
+    margin-top: 32px;
   }
-  .swiper-btn {
-    background-color: inherit;
-    border: transparent;
-    padding: 0;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:active, 
-    &:focus {
-      fill: var(--active-color);
-    }
-    &:disabled {
-      fill: var(--titles-color);
-    }
+  @media screen and (min-width: 1280px) {
+    margin-top: 36px;
   }
-  .swiper-button-prev {
-    margin-right: 32px;
+}
+.swiper-btn {
+  background-color: inherit;
+  border: transparent;
+  padding: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:active,
+  &:focus {
+    fill: var(--active-color);
   }
+  &:disabled {
+    fill: var(--titles-color);
+  }
+}
+.swiper-button-prev {
+  margin-right: 32px;
+}
 
+.button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 25;
+  letter-spacing: 0.02em;
 
+  width: 258px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--titles-color);
+  border-radius: 25px;
+  padding: 14px 35px;
+  color: var(--active-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--titles-color);
+    border: 2px solid var(--active-color);
+  }
+}
+
+.button-black {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  width: 236px;
+  height: 48px;
+  background-color: var(--subtitles-color);
+  border: 2px solid var(--titles-color);
+  border-radius: 25px;
+  padding: 14px 65px;
+  color: var(--active-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--titles-color);
+    border: 2px solid var(--active-color);
+  }
+}
+
+.button-accept {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  width: 434px;
+  height: 65px;
+  text-transform: uppercase;
+  background-color: var(--subtitles-color);
+  border: 1px solid var(--active-color);
+  border-radius: 25px;
+  padding: 18px 38px;
+  color: var(--titles-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--active-color);
+    border: 2px solid var(--active-color);
+    color: var(--subtitles-color);
+  }
+}
+
+// .button-modal {
   
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .button {
+//   &:hover,
+//   &:focus {
+//     background-color: var(--active-color);
+//     border: 1px solid var(--active-color);
+//     color: var(--subtitles-color);
+//   }
+// }
+// .button-mob {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 20px;
+//   line-height: 1.2;
+
+//   width: 384px;
+//   height: 64px;
+//   text-transform: uppercase;
+//   background-color: var(--subtitles-color);
+//   border: 1px solid var(--active-color);
+//   border-radius: 25px;
+//   color: var(--titles-color);
+//   padding: 20px 43px;
+//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     background-color: var(--active-color);
+//     border: 1px solid var(--active-color);
+//     color: var(--subtitles-color);
+//   }
+// }
+
+.button-mob2 {
+  @media screen and (min-width: 414px) {
     font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1,25;
-    letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 
-    width: 258px;
-    height: 48px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 2px solid var(--titles-color);
-    border-radius: 25px;
-    padding: 14px 35px;
-    color: var(--active-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
-    &:hover,
-    &:focus {
-        background-color: var(--titles-color);
-        border: 2px solid var(--active-color);
-    }
+  cursor: pointer;
+  width: 384px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--subtitles-color);
+  border: 1px solid var(--active-color);
+  border-radius: 2px;
+  color: var(--titles-color);
+  padding: 20px 43px;
   }
-    
-    .button-black {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1,25;
-      letter-spacing: 0.02em;
 
-      width: 236px;
-      height: 48px;
-      background-color: var(--subtitles-color);
-        border: 2px solid var(--titles-color);
-        border-radius: 25px;
-        padding: 14px 65px;
-        color: var(--active-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-        background-color: var(--titles-color);
-        border: 2px solid var(--active-color);
-    }
+  @media screen and (min-width: 1024px) {
+    cursor: pointer;
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  width: 592px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--subtitles-color);
+  border: 1px solid var(--active-color);
+  border-radius: 2px;
+  color: var(--titles-color);
+  padding: 18px 117px;
   }
-    
-    .button-accept {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1,2;
-      width: 434px;
-        height: 65px;
-        text-transform:uppercase;
-        background-color: var(--subtitles-color);
-        border: 1px solid var(--active-color);
-        border-radius: 25px;
-        padding: 18px 38px;
-        color: var(--titles-color);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-      background-color: var(--active-color);
-        border: 2px solid var(--active-color);
-        color: var(--subtitles-color);
-    }
-  }
-    
-    .button-modal {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1,2;
-        width: 592px;
-            height: 64px;
-            text-transform:uppercase;        
-            background-color: var(--subtitles-color);
-            border: 1px solid var(--active-color);
-            border-radius: 2px;
-            color: var(--titles-color);
-            padding: 18px 117px;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     
-    &:hover,
-    &:focus {
-      background-color: var(--active-color);
-        border: 1px solid var(--active-color);
-        color: var(--subtitles-color);
-    }
-  }
-    .button-mob {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1,2;
 
-        width: 384px;
-            height: 64px;
-            text-transform:uppercase;
-            background-color: var(--subtitles-color);
-            border: 1px solid var(--active-color);
-            border-radius: 25px;
-            color: var(--titles-color);
-            padding: 20px 43px;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-      background-color: var(--active-color);
-        border: 1px solid var(--active-color);
-        color: var(--subtitles-color);
-    }
+  @media screen and (min-width: 1280px) {
+    cursor: pointer;
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  width: 592px;
+  height: 64px;
+  text-transform: uppercase;
+  background-color: var(--subtitles-color);
+  border: 1px solid var(--active-color);
+  border-radius: 2px;
+  color: var(--titles-color);
+  padding: 18px 117px;
   }
-    
-    .button-mob2 {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1,2;
+  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        width: 384px;
-        height: 64px;
-        text-transform:uppercase;
-        background-color: var(--subtitles-color);
-        border: 1px solid var(--active-color);
-        border-radius: 2px;
-        color: var(--titles-color);
-        padding: 20px 43px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-      background-color: var(--active-color);
-        border: 1px solid var(--active-color);
-        color: var(--subtitles-color);
-    }
+  &:hover,
+  &:focus {
+    background-color: var(--active-color);
+    border: 1px solid var(--active-color);
+    color: var(--subtitles-color);
   }
+}
 
 .button-disabled {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1,2;
-letter-spacing: 0.02em;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 
-color: var(--secondary-text-color);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-&:hover,
-&:focus {
-   
-color: var(--active-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+  }
 }
 
 .svg-button-disabled:hover,
 .svg-button-disabled:focus {
   fill: var(--active-color);
-
 }
