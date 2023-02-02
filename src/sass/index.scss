@@ -1,12 +1,23 @@
 @import './common';
+@import './abstracts/backdrop';
 @import './abstracts/container';
 @import './abstracts/variables';
+@import './abstracts/mixins';
 
 @import './base/fonts';
 @import './base/reset-basis';
 
 // Structure
 @import './layout/header';
-@import './layout/footer';
+@import './layout/sec-hero';
+@import './layout/sec-hero-hotel';
+@import './layout/sec-hero-rest.scss';
 
+@import './layout/room-hero';
+@import './layout/about-rest';
+@import './layout/about-our-hotel';
+@import './layout/section-contacts';
+@import './layout/menu-restaurant';
+@import './layout/three-room';
 @import './layout/restaurant-details';
+@import './layout/footer';

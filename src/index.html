@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page title</title>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body>
-  <include src="./partials/header.html"></include>
-  <main>
-    <include src="./partials/restaurant-details.html"></include>
-  </main>
-  <include src="./partials/footer.html"></include>
-
-  <script src="./js/vendors/swiper-bundle.min.js"></script>
-  <script src="./js/vendors/nice-select2.js"></script>
-</body>
-
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIMIHO</title>
+    <link
+      rel="icon"
+      href="/src/images/mimino.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/sec-hero.html"></include>
+      <include src="./partials/sec-about-rest.html"></include>
+      <include src="./partials/restaurant-details.html"></include>
+      <include src="./partials/about-our-hotel.html"></include>
+      <include src="./partials/sections/section-contacts.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
 </html>
