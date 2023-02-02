@@ -1,5 +1,6 @@
-.room-section{
-    padding: 32px 0;
+.room-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     @media screen and (min-width: 1024px){
        padding-top: 50px;
@@ -7,7 +8,8 @@
     }
 
     @media screen and (min-width: 1280px){
-        padding: 48px 0;
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
 }
 
@@ -78,6 +80,10 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     width: 400px;
+
+    @media screen and (max-width: 1023px){
+        max-width: 384px;
+    }
 }
 
 .room-reserve-btn {
