@@ -157,12 +157,10 @@
     height: 270px;
     border-radius: 2px;
     margin-right: 25px;
-    transform: translateX(-80%);
 
     @include tablet {
         width: 270px;
         height: 270px;
-        transform: translateX(0);
         background-color: #DADADA;
     }
 
@@ -176,14 +174,12 @@
     height: 270px;
     margin-right: 20px;
     border-radius: 2px;
-    transform: translateX(-80%);
     
     @include tablet {
         width: 162px;
         height: 270px;
         margin-right: 34px;
         background-color: #DADADA;
-        transform: translateX(0);
     }
 
     @include desktop {
