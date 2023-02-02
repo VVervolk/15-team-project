@@ -161,6 +161,7 @@
     @include tablet {
         width: 270px;
         height: 270px;
+        margin-right: 0;
         background-color: #DADADA;
     }
 
@@ -204,6 +205,7 @@
 
     @include desktop {
         width: 270px;
+        margin-right: 0;
     }
 }
 
@@ -213,13 +215,14 @@
     align-items: center;
 
     gap: 16px;
-    margin-top: 32px;
+    margin-top: -69px;
     margin-left: auto;
     margin-right: auto;
 
     @include mobile {
         width: 236px;
         height: 48px;
+        margin-top: -23px;
         margin-left: 74px;
         margin-right: 74px;
     }
@@ -294,12 +297,12 @@
 .details-hotel-buttons-wrapper {
     display: flex;
     justify-content: right;
-    margin-top: -230px;
+    margin-top: -183px;
     margin-left: auto;
     margin-right: 25px;
 
     @include mobile {
-        margin-top: -144px;
+        margin-top: -112px;
         margin-left: 261px;
         margin-right: 25px;
     }
