@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 25;
+  line-height: 1.25;
   letter-spacing: 0.02em;
 
   width: 258px;
@@ -55,7 +55,6 @@
 
 .button-black {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -79,54 +78,33 @@
 }
 
 .button-accept {
-  
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 
-  
   text-transform: uppercase;
   background-color: var(--subtitles-color);
   border: 1px solid var(--active-color);
   border-radius: 25px;
   color: var(--titles-color);
-  
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 4px 8px;
-  cursor:pointer;
-  @media screen and (min-width: 414px) {
-    width: 384px;
+  cursor: pointer;
+  width: 384px;
   height: 64px;
-  }
 
   @media screen and (min-width: 1024px) {
     cursor: pointer;
-          font-size: 24px;
-  line-height: 1.2;
-  width: 434px;
-  height: 65px;
-              transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 24px;
+    line-height: 1.2;
+    width: 434px;
+    height: 65px;
   }
-
-  @media screen and (min-width: 1280px) {
-          font-size: 24px;
-  line-height: 1.2;
-  width: 434px;
-  height: 65px;
-             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -137,20 +115,20 @@
 }
 
 // .button-modal {
-  // cursor: pointer;
-  //   font-family: 'Montserrat';
-  // font-style: normal;
-  // font-weight: 500;
-  // font-size: 24px;
-  // line-height: 1.2;
-  // width: 592px;
-  // height: 64px;
-  // text-transform: uppercase;
-  // background-color: var(--subtitles-color);
-  // border: 1px solid var(--active-color);
-  // border-radius: 2px;
-  // color: var(--titles-color);
-  // padding: 18px 117px;
+// cursor: pointer;
+//   font-family: 'Montserrat';
+// font-style: normal;
+// font-weight: 500;
+// font-size: 24px;
+// line-height: 1.2;
+// width: 592px;
+// height: 64px;
+// text-transform: uppercase;
+// background-color: var(--subtitles-color);
+// border: 1px solid var(--active-color);
+// border-radius: 2px;
+// color: var(--titles-color);
+// padding: 18px 117px;
 //   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 //     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
 //     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -190,9 +168,7 @@
 // }
 
 .button-mob2 {
-  @media screen and (min-width: 414px) {
-    font-family: 'Montserrat';
-  font-style: normal;
+  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -206,45 +182,29 @@
   border-radius: 2px;
   color: var(--titles-color);
   padding: 10px 33px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    cursor: pointer;
-    font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.2;
-  width: 592px;
-  height: 64px;
-  text-transform: uppercase;
-  background-color: var(--subtitles-color);
-  border: 1px solid var(--active-color);
-  border-radius: 2px;
-  color: var(--titles-color);
-  padding: 10px 100px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    cursor: pointer;
-    font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.2;
-  width: 592px;
-  height: 64px;
-  text-transform: uppercase;
-  background-color: var(--subtitles-color);
-  border: 1px solid var(--active-color);
-  border-radius: 2px;
-  color: var(--titles-color);
-  padding: 10px 100px;
-  }
-  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    width: 592px;
+    height: 64px;
+    padding: 10px 100px;
+  }
+
+  // @media screen and (min-width: 1280px) {
+  //   font-weight: 500;
+  //   font-size: 24px;
+  //   line-height: 1.2;
+  //   width: 592px;
+  //   height: 64px;
+  //   text-transform: uppercase;
+  //   background-color: var(--subtitles-color);
+  //   border: 1px solid var(--active-color);
+  //   border-radius: 2px;
+  //   color: var(--titles-color);
+  //   padding: 10px 100px;
+  // }
 
   &:hover,
   &:focus {
@@ -256,7 +216,6 @@
 
 .button-disabled {
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
