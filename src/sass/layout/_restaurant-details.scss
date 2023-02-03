@@ -312,9 +312,16 @@
 }
 
 .details-buttons {
-  position: absolute;
-  top: 583px;
-  left: 89px;
+  
+  @media screen and (max-width: 413px) {
+    margin-top: 8x;
+  }
+  @media screen and (min-width: 414px) {
+    position: absolute;
+    top: 583px;
+    left: 89px;
+  }
+  
 
   @media screen and (min-width: 1024px) {
     top: 412px;
@@ -323,5 +330,12 @@
   @media screen and (min-width: 1280px) {
     top: 414px;
     left: 85px;
+  }
+}
+
+.details-buttons__item{
+  @media screen and (max-width: 413px) {
+    display: flex;
+    justify-content: center;
   }
 }
