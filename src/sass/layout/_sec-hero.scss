@@ -1,391 +1,431 @@
 .hero-homepage {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-        url(/src/images/heroes/homepage-hero-bg-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(/src/images/heroes/homepage-hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/homepage-hero-bg-mob-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/homepage-hero-bg-tab.jpg);
 
     @include retina {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/homepage-hero-bg-mob-2x.jpg);
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/heroes/homepage-hero-bg-tab-2x.jpg);
     }
+  }
 
-    @include tablet {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/homepage-hero-bg-tab.jpg);
+  @include desktop {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/homepage-hero-bg-desktop.jpg);
 
-        @include retina {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(/src/images/heroes/homepage-hero-bg-tab-2x.jpg);
-        }
+    @include retina {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/heroes/homepage-hero-bg-desktop-2x.jpg);
     }
-
-    @include desktop {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/homepage-hero-bg-desktop.jpg);
-
-        @include retina {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(/src/images/heroes/homepage-hero-bg-desktop-2x.jpg);
-        }
-    }
+  }
 }
 
 .hero-rest {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-        url(/src/images/heroes/rest-hero-bg-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(/src/images/heroes/rest-hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/rest-hero-bg-mob-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/rest-hero-bg-tab.jpg);
 
     @include retina {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/rest-hero-bg-mob-2x.jpg);
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/heroes/rest-hero-bg-tab-2x.jpg);
     }
+  }
 
-    @include tablet {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/rest-hero-bg-tab.jpg);
+  @include desktop {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/rest-hero-bg-desktop.jpg);
 
-        @include retina {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(/src/images/heroes/rest-hero-bg-tab-2x.jpg);
-        }
+    @include retina {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/heroes/rest-hero-bg-desktop-2x.jpg);
     }
-
-    @include desktop {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/rest-hero-bg-desktop.jpg);
-
-        @include retina {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(/src/images/heroes/rest-hero-bg-desktop-2x.jpg);
-        }
-    }
+  }
 }
 
 .hero-hotel {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.65)),
-        url(/src/images/heroes/hotel-hero-bg-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(/src/images/heroes/hotel-hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+  @include retina {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/hotel-hero-bg-mob-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/hotel-hero-bg-tab.jpg);
 
     @include retina {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/hotel-hero-bg-mob-2x.jpg);
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/heroes/hotel-hero-bg-tab-2x.jpg);
     }
+  }
 
-    @include tablet {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/hotel-hero-bg-tab.jpg);
+  @include desktop {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/heroes/hotel-hero-bg-desktop.jpg);
 
-        @include retina {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(/src/images/heroes/hotel-hero-bg-tab-2x.jpg);
-        }
+    @include retina {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(/src/images/heroes/hotel-hero-bg-desktop-2x.jpg);
     }
-
-    @include desktop {
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.65),
-                rgba(0, 0, 0, 0.65)),
-            url(/src/images/heroes/hotel-hero-bg-desktop.jpg);
-
-        @include retina {
-            background-image: linear-gradient(0deg,
-                    rgba(0, 0, 0, 0.65),
-                    rgba(0, 0, 0, 0.65)),
-                url(/src/images/heroes/hotel-hero-bg-desktop-2x.jpg);
-        }
-    }
+  }
 }
 
 .hero {
-    width: 100vw;
-    text-align: center;
+  width: 100vw;
+  text-align: center;
 
-    @include tablet {
-        padding: 188px 47px 15px;
-    }
+  @include tablet {
+    padding: 188px 47px 15px;
+  }
 
-    @include desktop {
-        padding: 164px 85px 65px;
-    }
+  @include desktop {
+    padding: 164px 85px 65px;
+  }
 }
 
 .hero-container {
-    position: relative;
-    padding: 181px 15px 20px;
+  position: relative;
+  padding: 181px 15px 20px;
 
-    @include tablet {
-        padding: 0 15px;
-        position: static;
-    }
+  @include tablet {
+    padding: 0 15px;
+    position: static;
+  }
 
-    @include desktop {
-        padding: 0;
-    }
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .hero__tittle {
-    font-family: 'Film P3';
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.073;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--titles-color);
-    margin-bottom: 24px;
-    transform: translate(10px);
+  font-family: 'Film P3';
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.073;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--titles-color);
+  margin-bottom: 24px;
+  transform: translate(10px);
 
-    @include tablet {
-        font-size: 128px;
-        line-height: 1.08;
-        margin-bottom: 16px;
-    }
+  @include tablet {
+    font-size: 128px;
+    line-height: 1.08;
+    margin-bottom: 16px;
+  }
 
-    @include desktop {
-        margin-bottom: 32px;
-    }
+  @include desktop {
+    margin-bottom: 32px;
+  }
 }
 
 .hero__name {
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    color: var(--titles-color);
-    margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+  margin-bottom: 40px;
 
-    @include tablet {
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 56px;
-    }
+  @include tablet {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 56px;
+  }
 
-    @include desktop {
-        margin-bottom: 64px;
-    }
+  @include desktop {
+    margin-bottom: 64px;
+  }
 }
 
 .hero__name--hotel {
-    margin-bottom: 178px;    
+  margin-bottom: 178px;
 
-    @include tablet {        
-        margin-bottom: 218px;
-    }
+  @include tablet {
+    margin-bottom: 218px;
+  }
 
-    @include desktop {
-        margin-bottom: 242px;
-    }
+  @include desktop {
+    margin-bottom: 242px;
+  }
 }
 
 .hero__slogan {
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--titles-color);
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--titles-color);
 
-    @media screen and (max-width: 1023px) {
-        margin-bottom: 113px;
-    }
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 113px;
+  }
 
-    @include tablet {
-        font-size: 36px;
-        line-height: 1.14;
-        margin-bottom: 137px;
-    }
+  @include tablet {
+    font-size: 36px;
+    line-height: 1.14;
+    margin-bottom: 137px;
+  }
 }
 
 .address {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    margin-bottom: 58px;
+  margin-bottom: 58px;
 
-    @include tablet {
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 25px;
-    }
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
 
-    @include desktop {
-        margin-bottom: 0;
-    }
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .hero__location {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    width: 210px;
-    height: 47px;
-    text-align: left;
+  width: 210px;
+  height: 47px;
+  text-align: left;
 
-    font-family: 'Montserrat';
-    font-size: 12px;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+
+  border: 1px solid;
+  border-color: var(--active-color);
+  border-radius: 2px;
+
+  color: #e5e5e5;
+  fill: var(--active-color);
+
+  padding: 8px 3px 9px 6px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+  }
+
+  @media (min-width: 200px) and (max-width: 413px) {
+    position: absolute;
+    top: 70px;
+    right: 15px;
+  }
+
+  @media (min-width: 414px) and (max-width: 1023px) {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+  }
+
+  @include tablet {
+    width: 285px;
+    height: 56px;
+    padding: 8px 8px 8px 10px;
+    font-size: 16px;
     line-height: 1.25;
-    letter-spacing: 0.01em;
+    position: static;
+    margin-right: auto;
+  }
 
-    border: 1px solid;
-    border-color: var(--active-color);
-    border-radius: 2px;
-
-    color: #E5E5E5;
-    fill: var(--active-color);
-
-    padding: 8px 3px 9px 6px;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: var(--active-color);
-    }
-
-    @media screen and (max-width: 1023px) {
-        position: absolute;
-        top: 64px;
-        right: 15px;
-    }
-
-    @include tablet {
-        width: 285px;
-        height: 56px;
-        padding: 8px 8px 8px 10px;
-        font-size: 16px;
-        line-height: 1.25;
-        position: static;
-        margin-right: auto;
-    }
-
-    @include desktop {
-        position: static;
-        margin-right: 253px;
-    }
+  @include desktop {
+    position: static;
+    margin-right: 253px;
+  }
 }
 
 .hero__location-icon {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 
-    @include tablet {
-        width: 24px;
-        height: 24px;
-    }
-
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .hero__btn {
-    color: var(--active-color);
-    border: 2px solid;
-    border-color: var(--titles-color);
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 25px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
+  color: var(--active-color);
+  border: 2px solid;
+  border-color: var(--titles-color);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
 
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        background: var(--titles-color);
-        border: 2px solid var(--active-color);
-    }
+  &:hover,
+  &:focus {
+    background: var(--titles-color);
+    border: 2px solid var(--active-color);
+  }
 }
 
 .hero__btn--first {
-    @media screen and (max-width: 1023px) {
-        margin-bottom: 24px;
-    }
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 24px;
+  }
 
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        position: static;
-        margin-right: 40px;
-    }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    position: static;
+    margin-right: 40px;
+  }
 
-    @include desktop {
-        position: static;
-    }
+  @include desktop {
+    position: static;
+  }
 }
 
 .hero__btn--second {
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        position: static;
-    }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    position: static;
+  }
 
-    @include desktop {
-        position: static;
-    }
+  @include desktop {
+    position: static;
+  }
 }
 
 .social-list-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-    @include desktop {
-        display: none;
-    }
+  @include desktop {
+    display: none;
+  }
 }
 
 .social-list-nav__icon {
-    display: block;
-    fill: var(--active-color);
+  display: block;
+  fill: var(--active-color);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        fill: var(--secondary-text-color);
-    }
+  &:hover,
+  &:focus {
+    fill: var(--secondary-text-color);
+  }
 }

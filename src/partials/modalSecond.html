@@ -25,7 +25,7 @@
           </div>
           <div class="form__field">
             <input
-              class="form__input"
+              class="js-inputmask form__input"
               id="user-name"
               type="text"
               name="user-name"
@@ -36,20 +36,28 @@
           </div>
         </div>
 
-        <div class="form__field form__field--column">
-          <select
-            class="form__input textinselect"
-            name="form__numberpeople"
-            id="form__numberpeople-select"
-          >
-            <option value="Одномісний">Одномісний</option>
-            <option value="Двомісний">Двомісний</option>
-            <option value="Сімейний">Сімейний</option>
-            <option value="Одномісний люкс">Одномісний люкс</option>
-            <option selected value="Двомісний люкс">Двомісний люкс</option>
-            <option value="Сімейний люкс">Сімейний люкс</option>
-          </select>
-          <p class="form__label">Категорія номеру</p>
+        <div class="form__position-column" style="justify-content: flex-end">
+          <div class="form__field">
+            <div class="select-wrapper">
+              <svg class="select-icon" width="24" height="24">
+                <use href="./images/icons-svg.svg#icon-down"></use>
+              </svg>
+
+              <select
+                class="form__input textinselect select"
+                name="form__numberpeople"
+                id="form__numberpeople-select"
+              >
+                <option value="Одномісний">Одномісний</option>
+                <option value="Двомісний">Двомісний</option>
+                <option value="Сімейний">Сімейний</option>
+                <option value="Одномісний люкс">Одномісний люкс</option>
+                <option selected value="Двомісний люкс">Двомісний люкс</option>
+                <option value="Сімейний люкс">Сімейний люкс</option>
+              </select>
+            </div>
+            <p class="form__label">Категорія номеру</p>
+          </div>
         </div>
         <div class="form__position-column">
           <div class="form__field">
