@@ -31,14 +31,20 @@
 (() => {
   const refs = {
     openModalBtnThird: document.querySelector('[data-modal-open-third]'),
+    openModalBtnThird2: document.querySelector('[data-modal-open-third-2]'),
+    openModalBtnThird3: document.querySelector('[data-modal-open-third-3]'),
+    openModalBtnThird4: document.querySelector('[data-modal-open-third-4]'),
     closeModalBtnThird: document.querySelector('[data-modal-close-third]'),
     modalThird: document.querySelector('[data-modal-third]'),
   };
 
-  refs.openModalBtnThird?.addEventListener('click', toggleModalThird);
-  refs.closeModalBtnThird?.addEventListener('click', toggleModalThird);
+  refs.openModalBtnThird.addEventListener('click', toggleModalThird);
+  refs.closeModalBtnThird.addEventListener('click', toggleModalThird);
+  refs.openModalBtnThird2.addEventListener('click', toggleModalThird);
+  refs.openModalBtnThird3.addEventListener('click', toggleModalThird);
+  refs.openModalBtnThird4.addEventListener('click', toggleModalThird);
 
   function toggleModalThird() {
-    refs.modalThird?.classList?.toggle('is-hidden');
+    refs.modalThird.classList.toggle('is-hidden');
   }
 })();
