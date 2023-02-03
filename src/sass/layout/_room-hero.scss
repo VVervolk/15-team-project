@@ -17,6 +17,9 @@
     justify-content: space-between;
     width: 100%;
     margin-top: 0;
+    @media screen and (max-width: 385px){
+      top: 200px;
+    }
     @media screen and (min-width: 1024px) {
       padding-left: calc((100vw - 1024px + 94px) / 2);
       padding-right: calc((100vw - 1024px + 94px) / 2);
@@ -32,6 +35,7 @@
     width: 40px;
     height: 40px;
     background: rgba(0, 0, 0, 0.65);
+    fill: var(--active-color);
   }
   .swiper-button-prev {
     margin-right: 0;
@@ -168,7 +172,10 @@
     max-width: 232px;
     padding: 10px;
   }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 370px) {
+    transform: translateY(25%);
+  }
+  @media screen and (min-width: 371px) and (max-width: 1023px) {
     transform: translateY(50%);
   }
   @media screen and (min-width: 1024px) and (max-width: 1279px) {
