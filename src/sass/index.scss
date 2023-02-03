@@ -1,25 +1,37 @@
-@import "./common";
-@import "./abstracts/backdrop";
-@import "./abstracts/container";
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@import './common';
+@import './abstracts/mixins';
+@import './abstracts/backdrop';
+@import './abstracts/container';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './layout/modals';
 
 @import './base/fonts';
 @import './base/reset-basis';
 @import './components/minislider';
 @import './components/buttons';
+@import './components/room-pointer';
+
+
+
+
+
+
 
 // Structure
 @import './layout/header';
 @import './layout/sec-hero';
 @import './layout/sec-hero-hotel';
 @import './layout/sec-hero-rest.scss';
-
+@import './layout/restaurant-details';
 @import './layout/room-hero';
 @import './layout/about-rest';
+@import './layout/details_hotel';
 @import './layout/about-our-hotel';
 @import './layout/section-contacts';
 @import './layout/menu-restaurant';
 @import './layout/room';
 @import './layout/footer';
+@import "./layout/modals";
+@import './layout/room-double';
 @import './layout/three-room';

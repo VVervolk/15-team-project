@@ -1,0 +1,18 @@
+// buttons for mini-slider room
+.swiper-room-btns {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (min-width: 1024px) {
+      margin-top: 32px;
+      justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1280px){
+      margin-top: 40px;
+      
+    }
+  }
+  
