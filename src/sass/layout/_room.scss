@@ -1,0 +1,140 @@
+.room-container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 1024px){
+       padding-top: 50px;
+       padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px){
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+}
+
+.room-section__title{
+    font-family: 'Times New Roman';
+    color: var(--subtitles-color);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.room-amenities__title{
+    font-family: 'Times New Roman';
+    color: var(--subtitles-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.room-amenities{
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px){
+        margin-bottom: 40px;
+    }
+}
+
+.room-amenities__item{
+    &:not(:last-child){
+        margin-bottom: 32px;
+        }
+}
+
+.room-amenities__card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    @media screen and (min-width: 1024px){
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    @media screen and (min-width: 1280px){
+        gap: 159px;
+    }
+}
+
+.room-section__text{
+    font-family: 'Montserrat';
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    max-width: 757px;
+}
+
+.room-amenities__text{
+    font-family: 'Montserrat';
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    
+    @media screen and (min-width: 414px){
+        width: 400px;
+    }
+    @media screen and (max-width: 1023px){
+        max-width: 384px;
+    }
+}
+
+.room-reserve-btn {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1024px){
+        margin-bottom: 32px;
+        margin-left: 495px;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-left: 555px;
+    }
+}
+
+.back-hotel-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: 'Montserrat';
+    color: var(--secondary-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+
+    @media screen and (min-width: 1024px){
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-left: 495px;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-left: 430px;
+    }
+
+    &:hover,
+    &:active{
+        color: var(--active-color);
+        .back-hotel-icon{
+            fill: var(--active-color);   
+        }
+    }
+}
+
+.back-hotel-icon{
+    fill: var(--secondary-text-color);
+}
