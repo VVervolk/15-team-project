@@ -12,18 +12,9 @@
 @import './components/buttons';
 @import './components/room-pointer';
 
-
-
-
-
-
-
 // Structure
 @import './layout/header';
 @import './layout/sec-hero';
-@import './layout/sec-hero-hotel';
-@import './layout/sec-hero-rest.scss';
-@import './layout/restaurant-details';
 @import './layout/room-hero';
 @import './layout/about-rest';
 @import './layout/details_hotel';
@@ -32,6 +23,6 @@
 @import './layout/menu-restaurant';
 @import './layout/room';
 @import './layout/footer';
-@import "./layout/modals";
+@import './layout/modals';
 @import './layout/room-double';
 @import './layout/three-room';
