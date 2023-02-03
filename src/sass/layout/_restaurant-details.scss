@@ -178,9 +178,16 @@
 
 .swiper-arrows {
   .swiper-btn {
-    // background-color: transparent;
-    // border-color: transparent;
     fill: #ffffff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:active,
+    &:focus {
+      fill: var(--active-color);
+    }
+    &:disabled {
+      fill: var(--titles-color);
+    }
   }
 }
 
