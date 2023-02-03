@@ -9,6 +9,13 @@
 @import './base/reset-basis';
 @import './components/minislider';
 @import './components/buttons';
+@import './components/room-pointer';
+
+
+
+
+
+
 
 // Structure
 @import './layout/header';
@@ -23,4 +30,6 @@
 @import './layout/section-contacts';
 @import './layout/menu-restaurant';
 @import './layout/footer';
+@import "./layout/modals";
+@import './layout/room-double';
 @import './layout/three-room';
