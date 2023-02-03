@@ -282,7 +282,6 @@
 
   @include tablet {
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 25px;
   }
 
@@ -388,13 +387,14 @@
     margin-bottom: 24px;
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+  @media screen and (min-width: 1024px) {
     position: static;
     margin-right: 40px;
   }
 
   @include desktop {
     position: static;
+    margin-right: 60px;
   }
 }
 
