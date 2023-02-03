@@ -136,38 +136,37 @@
 
 .hero {
     width: 100vw;
-    padding-top: 50px;
-    
     text-align: center;
 
     @include tablet {
-        padding: 188px 47px 257px;
+        padding: 188px 47px 15px;
     }
 
     @include desktop {
-        padding: 164px 85px 257px;
+        padding: 164px 85px 65px;
     }
 }
 
 .hero-container {
     position: relative;
-    padding: 181px 15px 102px;
+    padding: 181px 15px 20px;
 
     @include tablet {
-        padding: 0 15px 0;
-        }
-    
-        // @include desktop {
+        padding: 0 15px;
+        position: static;
+    }
 
-        // }
+    @include desktop {
+        padding: 0;
+    }
 }
 
 .hero__tittle {
     font-family: 'Film P3';
-    font-size: 80px;
+    font-size: 96px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.08;
+    line-height: 1.073;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     text-align: center;
@@ -187,7 +186,7 @@
 }
 
 .hero__name {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 600;
     letter-spacing: 0.02em;
@@ -202,6 +201,18 @@
 
     @include desktop {
         margin-bottom: 64px;
+    }
+}
+
+.hero__name--hotel {
+    margin-bottom: 178px;    
+
+    @include tablet {        
+        margin-bottom: 218px;
+    }
+
+    @include desktop {
+        margin-bottom: 242px;
     }
 }
 
@@ -222,6 +233,26 @@
     @include tablet {
         font-size: 36px;
         line-height: 1.14;
+        margin-bottom: 137px;
+    }
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 58px;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    @include desktop {
+        margin-bottom: 0;
     }
 }
 
@@ -242,11 +273,11 @@
     border-color: var(--active-color);
     border-radius: 2px;
 
-    color: var(--titles-color);
+    color: #E5E5E5;
     fill: var(--active-color);
 
     padding: 8px 3px 9px 6px;
-    
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -256,7 +287,7 @@
 
     @media screen and (max-width: 1023px) {
         position: absolute;
-        top: 70px;
+        top: 64px;
         right: 15px;
     }
 
@@ -266,15 +297,13 @@
         padding: 8px 8px 8px 10px;
         font-size: 16px;
         line-height: 1.25;
-        position: absolute;
-        bottom: 64px;
-        left: 47px;
+        position: static;
+        margin-right: auto;
     }
 
     @include desktop {
-        position: absolute;
-        bottom: 64px;
-        left: 85px;
+        position: static;
+        margin-right: 253px;
     }
 }
 
@@ -298,7 +327,7 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 25px;
-    padding: 14px 24px;
+    padding: 12px 24px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.25;
@@ -320,29 +349,22 @@
     }
 
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        position: absolute;
-        bottom: 64px;
-        right: 319px;
+        position: static;
+        margin-right: 40px;
     }
 
     @include desktop {
-        position: absolute;
-        bottom: 65px;
-        right: 377px;
+        position: static;
     }
 }
 
 .hero__btn--second {
     @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        position: absolute;
-        bottom: 64px;
-        right: 47px;
+        position: static;
     }
 
     @include desktop {
-        position: absolute;
-        bottom: 65px;
-        right: 85px;
+        position: static;
     }
 }
 
@@ -350,16 +372,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-
-    @media screen and (min-width: 1024px) and (max-width: 1279px) {
-        position: absolute;
-        bottom: 15px;
-        left: 47px;
-    }
 
     @include desktop {
         display: none;
