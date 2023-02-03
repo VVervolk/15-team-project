@@ -208,7 +208,9 @@
   color: var(--titles-color);
   margin-bottom: 24px;
   transform: translate(10px);
-
+  @media screen and (max-width: 357px) {
+    font-size: 75px;
+  }
   @include tablet {
     font-size: 128px;
     line-height: 1.08;
